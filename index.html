@@ -1,0 +1,3191 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title data-lang-key="landings.fortune-wheel.page-title">1win</title>
+	<!--<script>(function checkToken() {
+		const getTokenFromLS = () => {
+			try {
+				return JSON.parse(window.localStorage.getItem('1w_token'));
+			} catch (e) {
+				return null;
+			}
+		};
+
+		const fetchToken = () => {
+			const token = getTokenFromLS();
+			if (token) {
+				return Promise.resolve(token);
+			}
+
+			return fetch(`/get-authorization?random=${Date.now()}-${Math.random()}`, {credentials: 'include'})
+				.then((response) => response.json())
+				.then((json) => json.token)
+				.catch((error) => {
+					console.warn('Unable to get authorization token. ', {error});
+				});
+		};
+
+		fetchToken().then((token) => {
+			if (token) {
+				fetch(`/check/${token}`)
+					.then((response) => response.json())
+					.then((isTokenActive) => {
+						if (isTokenActive) {
+							window.location.href = '/';
+						}
+					})
+					.catch((error) => {
+						console.warn('Unable to check authorization token. ', {error});
+					});
+			}
+		});
+	}());</script>-->
+	<script>
+		fetch("/js/text.json")
+			.then(response => response.json())
+			.then(json => console.log(json));
+	</script>
+	<link rel="icon" href="/favicon.png">
+	<link href="css/main.css" rel="stylesheet">
+	<style>
+        /*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsInNvdXJjZVJvb3QiOiIifQ== */</style>
+</head>
+<body>
+<div class="notifications-container"></div>
+<div class="header" style="z-index: 223;">
+	<div class="wrapper"><img src="/img/logotype.svg" alt="logo1WIN" class="logo"> <a
+			class="go-to-site-btn flexRow" href="https://1wyrc.top/casino"
+			style="z-index:999;pointer-events:all;position:relative;top:0px;">
+		<div class="plate">
+			<div class="flexCol"><p data-lang-key="landings.fortune-wheel.go-to-site-btn-heading">Уже есть аккаунт?</p>
+				<h6 data-lang-key="landings.fortune-wheel.go-to-site-btn-subheading">Перейти на сайт</h6></div>
+			<div class="square">
+				<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+					<path fill="#FFF"
+						  d="M10.4 3.4l5.2 5.2c.4.4.4 1 0 1.5l-5.2 5.2a1 1 0 01-1.5-1.5l3.4-3.4H3.4a1 1 0 110-2h9L8.8 4.8a1 1 0 010-1.5 1 1 0 011.5 0z"></path>
+				</svg>
+			</div>
+		</div>
+	</a></div>
+</div>
+<div class="background-image"
+	 style="background-image: linear-gradient(to top, rgba(0,6,29,0.3),rgba(0,14,62,0)), url('/img/background.jpg');"></div>
+<div class="flexCol">
+	<div class="block block_preview main">
+		<div class="circle stage-1">
+			<div class="main__circle">
+				<div class="present-img" style="background-image: url('/img/present.png');"></div>
+				<div class="lottery">
+					<img class="main__circle__img" src="/img/circle.png">
+				</div>
+				<img class="pointer" src="/img/pointer.png">
+				<span class="main__circle__span"
+					  id="run-circle"
+					  data-lang-key="landings.fortune-wheel.roulette-spin-btn">
+					Крутить
+				</span>
+				<div class="counter-lottery"><span class="number">2</span>
+					<span class="try" data-lang-key="landings.fortune-wheel.roulette-spin-amount-1">Попытки</span>
+				</div>
+			</div>
+			<div class="main__bonus-wrapper">
+				<div class="main__bonus__left hide">
+					<div class="flexCol"><h6 data-lang-key="landings.fortune-wheel.win-free-spins-amount-1">250</h6>
+						<span data-lang-key="landings.fortune-wheel.win-free-spins-free">БЕСПЛАТНЫХ</span>
+						<p data-lang-key="landings.fortune-wheel.win-free-spins-spins">СПИНОВ</p></div>
+					<div class="img img1x" style="background-image: url('/img/giftbox.png')"
+						 alt="giftbox"></div>
+					<div class="img img1x" style="background-image: url('/img/rectangle.png')"
+						 alt="rectangle"></div>
+					<div class="img img2x" style="background-image: url('/img/rectangle2.png')"
+						 alt="giftbox"></div>
+					<div class="img img2x" style="background-image: url('/img/rectangle2x.png')"
+						 alt="rectangle"></div>
+				</div>
+				<div class="main__bonus__right hide">
+					<div class="flexCol"><span data-lang-key="landings.fortune-wheel.win-bonus-bonus">Бонус</span><h6>
+						500</h6></div>
+					<div class="img img1x" style="background-image: url('/img/giftbox.png')"
+						 alt="giftbox"></div>
+					<div class="img img1x" style="background-image: url('/img/rectangle.png')"
+						 alt="rectangle"></div>
+					<div class="img img2x" style="background-image: url('/img/rectangle2.png')"
+						 alt="giftbox"></div>
+					<div class="img img2x" style="background-image: url('/img/rectangle2x.png')"
+						 alt="rectangle"></div>
+				</div>
+			</div>
+			<div class="plate-absolute">
+				<a class="go-to-site-btn flexRow" href="/"
+				   style="z-index: 999; pointer-events: all;">
+				<div class="flexCol">
+					<p data-lang-key="landings.fortune-wheel.go-to-site-btn-heading">
+						Уже есть аккаунт?
+					</p>
+					<h6 data-lang-key="landings.fortune-wheel.go-to-site-btn-subheading">Перейти на
+					сайт</h6>
+				</div>
+				<div class="square">
+					<svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
+						<g transform="translate(-1338 -65) translate(1182 45) translate(148 12) matrix(-1 0 0 1 27 8)">
+							<path fill="#FFF"
+								  d="M8.615 3.415l-5.2 5.2c-.405.406-.405 1.064 0 1.471l5.2 5.2c.406.406 1.064.406 1.471 0 .406-.405.406-1.063 0-1.47L6.662 10.39h8.89c.576 0 1.04-.465 1.04-1.04s-.464-1.04-1.04-1.04h-8.89l3.424-3.425c.204-.203.305-.47.305-.735 0-.266-.101-.532-.305-.736-.407-.405-1.065-.405-1.47 0z"></path>
+						</g>
+					</svg>
+				</div>
+			</a></div>
+			<div class="main__circle__text">
+				<div class="circle__cell">
+					<div class="cell_1"><b data-lang-key="landings.fortune-wheel.win-free-spins-amount-2">50</b> <span
+							data-lang-key="landings.fortune-wheel.win-free-spins-free">БЕСПЛАТНЫХ</span> <b
+							class="middle-b" data-lang-key="landings.fortune-wheel.win-free-spins-spins">СПИНОВ</b>
+					</div>
+					<div class="cell_2"><br>
+						<p data-lang-key="landings.fortune-wheel.win-try-again-try">попробуй</p>
+						<p data-lang-key="landings.fortune-wheel.win-try-again-again">еще</p></div>
+					<div class="cell_3"><b data-lang-key="landings.fortune-wheel.win-free-spins-amount-1">250</b> <span
+							data-lang-key="landings.fortune-wheel.win-free-spins-free">БЕСПЛАТНЫХ</span> <b
+							class="middle-b" data-lang-key="landings.fortune-wheel.win-free-spins-spins">СПИНОВ</b>
+					</div>
+					<div class="cell_4"><br>
+						<p data-lang-key="landings.fortune-wheel.win-no-win-no">без</p>
+						<p data-lang-key="landings.fortune-wheel.win-no-win-win">выигрыша</p></div>
+					<div class="cell_5"><br><br><span
+							data-lang-key="landings.fortune-wheel.win-bonus-bonus">Бонус</span> <b>500%</b></div>
+					<div class="cell_6"><br>
+						<p data-lang-key="landings.fortune-wheel.win-try-again-try">попробуй</p>
+						<p data-lang-key="landings.fortune-wheel.win-try-again-again">еще</p></div>
+					<div class="cell_7"><span data-lang-key="landings.fortune-wheel.win-bonus-bonus">Бонус</span> <b>500%</b>
+					</div>
+					<div class="cell_8"><br>
+						<p data-lang-key="landings.fortune-wheel.win-no-win-no">без</p>
+						<p data-lang-key="landings.fortune-wheel.win-no-win-win">выигрыша</p></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="M M_youWin" mw_stype="" toggle-modal-btn="">
+	<div class="M__cover"></div>
+	<div class="M__wrapper" mw_scrolled="" style="display: inherit;"><img class="gift-a"
+																		  src="/img/present.png"
+																		  aria-hidden="true"> <img class="gift-b"
+																								   src="/img/present.png"
+																								   aria-hidden="true">
+		<div class="M__main-wrapper height-auto" modal-wrapper="">
+			<div class="M__content" modal-content="">
+				<div class="h6" data-lang-key="landings.fortune-wheel.congrats-you-win-congrats">Поздравляем!</div>
+				<div class="h1" data-lang-key="landings.fortune-wheel.congrats-you-win-you-win">Вы выиграли!</div>
+				<div class="flexRow">
+					<div class="bonus-square">
+						<div class="flexCol"><span data-lang-key="landings.fortune-wheel.win-bonus-bonus">Бонус</span>
+							<b data-lang-key="landings.fortune-wheel.win-bonus-amount-1">500</b></div>
+						<img src="/img/rectangle2.png" alt="giftbox"> <img
+							src="/img/rectangle2x.png" alt="rectangle"></div>
+					<div class="bonus-square">
+						<div class="flexCol"><h6 data-lang-key="landings.fortune-wheel.win-free-spins-amount-1">250</h6>
+							<span data-lang-key="landings.fortune-wheel.win-free-spins-free">БЕСПЛАТНЫХ</span>
+							<p data-lang-key="landings.fortune-wheel.win-free-spins-spins">СПИНОВ</p></div>
+						<img src="/img/rectangle2.png" alt="giftbox"> <img
+							src="/img/rectangle2x.png" alt="rectangle"></div>
+				</div>
+				<div class="toggle-containers-wrapper">
+					<div class="container_toggle" data-form="1click" active="">
+
+
+						<button class="reg-btn" onclick="onClickRegister('1click')"
+								data-lang-key="landings.fortune-wheel.reg-btn">Зарегистрироваться
+						</button>
+
+					</div>
+					<div class="container_toggle" data-form="mobile">
+						<div class="form-field-wrapper" data-form-field-wrapper="" data-form-field-wrapper-phone="">
+							<div class="input-wrapper input-wrapper_phone">
+								<div class="select-wrapper dialog-show-btn dialog-show-btn_onclick" data-value="nl"
+									 data-form-field="country" data-form-field-avatar-type="svg-sprite">
+									<svg class="change-img avatar" xmlns="http://www.w3.org/2000/svg">
+										<use href="/img/flags.svg#nl"></use>
+									</svg>
+									<svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="#fff"
+										 viewBox="0 0 285 285" width="8px" height="8px">
+										<path d="M282 77l-14-15a9 9 0 00-13 0L142 174 30 62a9 9 0 00-13 0L3 77a9 9 0 000 13l133 133a9 9 0 0013 0L282 90a9 9 0 000-13z"></path>
+									</svg>
+									<div class="dialog-menu-wrapper dialog-menu-wrapper_bottom">
+										<div class="dialog-menu">
+											<div class="option" data-value="ru">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ru"></use>
+												</svg>
+												<p>Russia (Россия)</p></div>
+											<div class="option" data-value="ua">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ua"></use>
+												</svg>
+												<p>Ukraine (Україна)</p></div>
+											<div class="option" data-value="kz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kz"></use>
+												</svg>
+												<p>Kazakhstan (Казахстан)</p></div>
+											<div class="option" data-value="as">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#as"></use>
+												</svg>
+												<p>American Samoa</p></div>
+											<div class="option" data-value="ad">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ad"></use>
+												</svg>
+												<p>Andorra</p></div>
+											<div class="option" data-value="ao">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ao"></use>
+												</svg>
+												<p>Angola</p></div>
+											<div class="option" data-value="ai">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ai"></use>
+												</svg>
+												<p>Anguilla</p></div>
+											<div class="option" data-value="ag">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ag"></use>
+												</svg>
+												<p>Antigua and Barbuda</p></div>
+											<div class="option" data-value="ar">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ar"></use>
+												</svg>
+												<p>Argentina</p></div>
+											<div class="option" data-value="am">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#am"></use>
+												</svg>
+												<p>Armenia (Հայաստան)</p></div>
+											<div class="option" data-value="aw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#aw"></use>
+												</svg>
+												<p>Aruba</p></div>
+											<div class="option" data-value="au">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#au"></use>
+												</svg>
+												<p>Australia</p></div>
+											<div class="option" data-value="at">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#at"></use>
+												</svg>
+												<p>Austria (Österreich)</p></div>
+											<div class="option" data-value="az">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#az"></use>
+												</svg>
+												<p>Azerbaijan (Azərbaycan)</p></div>
+											<div class="option" data-value="bs">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bs"></use>
+												</svg>
+												<p>Bahamas</p></div>
+											<div class="option" data-value="bh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bh"></use>
+												</svg>
+												<p>Bahrain (&#x202B;البحرين&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="bd">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bd"></use>
+												</svg>
+												<p>Bangladesh (বাংলাদেশ)</p></div>
+											<div class="option" data-value="bb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bb"></use>
+												</svg>
+												<p>Barbados</p></div>
+											<div class="option" data-value="by">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#by"></use>
+												</svg>
+												<p>Belarus (Беларусь)</p></div>
+											<div class="option" data-value="be">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#be"></use>
+												</svg>
+												<p>Belgium (België)</p></div>
+											<div class="option" data-value="bz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bz"></use>
+												</svg>
+												<p>Belize</p></div>
+											<div class="option" data-value="bj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bj"></use>
+												</svg>
+												<p>Benin (Bénin)</p></div>
+											<div class="option" data-value="bm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bm"></use>
+												</svg>
+												<p>Bermuda</p></div>
+											<div class="option" data-value="bt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bt"></use>
+												</svg>
+												<p>Bhutan (འབྲུག)</p></div>
+											<div class="option" data-value="bo">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bo"></use>
+												</svg>
+												<p>Bolivia</p></div>
+											<div class="option" data-value="ba">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ba"></use>
+												</svg>
+												<p>Bosnia and Herzegovina (Босна и Херцеговина)</p></div>
+											<div class="option" data-value="bw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bw"></use>
+												</svg>
+												<p>Botswana</p></div>
+											<div class="option" data-value="br">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#br"></use>
+												</svg>
+												<p>Brazil (Brasil)</p></div>
+											<div class="option" data-value="io">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#io"></use>
+												</svg>
+												<p>British Indian Ocean Territory</p></div>
+											<div class="option" data-value="vg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#vg"></use>
+												</svg>
+												<p>British Virgin Islands</p></div>
+											<div class="option" data-value="bn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bn"></use>
+												</svg>
+												<p>Brunei</p></div>
+											<div class="option" data-value="bg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bg"></use>
+												</svg>
+												<p>Bulgaria (България)</p></div>
+											<div class="option" data-value="bf">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bf"></use>
+												</svg>
+												<p>Burkina Faso</p></div>
+											<div class="option" data-value="bi">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bi"></use>
+												</svg>
+												<p>Burundi (Uburundi)</p></div>
+											<div class="option" data-value="kh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kh"></use>
+												</svg>
+												<p>Cambodia (កម្ពុជា)</p></div>
+											<div class="option" data-value="cm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cm"></use>
+												</svg>
+												<p>Cameroon (Cameroun)</p></div>
+											<div class="option" data-value="ca">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ca"></use>
+												</svg>
+												<p>Canada</p></div>
+											<div class="option" data-value="cv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cv"></use>
+												</svg>
+												<p>Cape Verde (Kabu Verdi)</p></div>
+											<div class="option" data-value="ky">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ky"></use>
+												</svg>
+												<p>Cayman Islands</p></div>
+											<div class="option" data-value="cf">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cf"></use>
+												</svg>
+												<p>Central African Republic (République centrafricaine)</p></div>
+											<div class="option" data-value="td">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#td"></use>
+												</svg>
+												<p>Chad (Tchad)</p></div>
+											<div class="option" data-value="cl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cl"></use>
+												</svg>
+												<p>Chile</p></div>
+											<div class="option" data-value="cn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cn"></use>
+												</svg>
+												<p>China (中国)</p></div>
+											<div class="option" data-value="cx">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cx"></use>
+												</svg>
+												<p>Christmas Island</p></div>
+											<div class="option" data-value="cc">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cc"></use>
+												</svg>
+												<p>Cocos (Keeling) Islands</p></div>
+											<div class="option" data-value="co">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#co"></use>
+												</svg>
+												<p>Colombia</p></div>
+											<div class="option" data-value="km">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#km"></use>
+												</svg>
+												<p>Comoros (&#x202B;جزر القمر&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="cg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cg"></use>
+												</svg>
+												<p>Congo (Republic) (Congo-Brazzaville)</p></div>
+											<div class="option" data-value="ck">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ck"></use>
+												</svg>
+												<p>Cook Islands</p></div>
+											<div class="option" data-value="cr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cr"></use>
+												</svg>
+												<p>Costa Rica</p></div>
+											<div class="option" data-value="ci">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ci"></use>
+												</svg>
+												<p>Côte d’Ivoire</p></div>
+											<div class="option" data-value="hr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hr"></use>
+												</svg>
+												<p>Croatia (Hrvatska)</p></div>
+											<div class="option" data-value="cu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cu"></use>
+												</svg>
+												<p>Cuba</p></div>
+											<div class="option" data-value="cw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cw"></use>
+												</svg>
+												<p>Curaçao</p></div>
+											<div class="option" data-value="cy">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cy"></use>
+												</svg>
+												<p>Cyprus (Κύπρος)</p></div>
+											<div class="option" data-value="cz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cz"></use>
+												</svg>
+												<p>Czech Republic (Česká republika)</p></div>
+											<div class="option" data-value="dk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#dk"></use>
+												</svg>
+												<p>Denmark (Danmark)</p></div>
+											<div class="option" data-value="dj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#dj"></use>
+												</svg>
+												<p>Djibouti</p></div>
+											<div class="option" data-value="dm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#dm"></use>
+												</svg>
+												<p>Dominica</p></div>
+											<div class="option" data-value="do">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#do"></use>
+												</svg>
+												<p>Dominican Republic (República Dominicana)</p></div>
+											<div class="option" data-value="ec">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ec"></use>
+												</svg>
+												<p>Ecuador</p></div>
+											<div class="option" data-value="eg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#eg"></use>
+												</svg>
+												<p>Egypt (&#x202B;مصر&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="sv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sv"></use>
+												</svg>
+												<p>El Salvador</p></div>
+											<div class="option" data-value="gq">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gq"></use>
+												</svg>
+												<p>Equatorial Guinea (Guinea Ecuatorial)</p></div>
+											<div class="option" data-value="er">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#er"></use>
+												</svg>
+												<p>Eritrea</p></div>
+											<div class="option" data-value="ee">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ee"></use>
+												</svg>
+												<p>Estonia (Eesti)</p></div>
+											<div class="option" data-value="et">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#et"></use>
+												</svg>
+												<p>Ethiopia</p></div>
+											<div class="option" data-value="fk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fk"></use>
+												</svg>
+												<p>Falkland Islands (Islas Malvinas)</p></div>
+											<div class="option" data-value="fo">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fo"></use>
+												</svg>
+												<p>Faroe Islands (Føroyar)</p></div>
+											<div class="option" data-value="fj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fj"></use>
+												</svg>
+												<p>Fiji</p></div>
+											<div class="option" data-value="fi">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fi"></use>
+												</svg>
+												<p>Finland (Suomi)</p></div>
+											<div class="option" data-value="fr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fr"></use>
+												</svg>
+												<p>France</p></div>
+											<div class="option" data-value="pf">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pf"></use>
+												</svg>
+												<p>French Polynesia (Polynésie française)</p></div>
+											<div class="option" data-value="ga">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ga"></use>
+												</svg>
+												<p>Gabon</p></div>
+											<div class="option" data-value="gm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gm"></use>
+												</svg>
+												<p>Gambia</p></div>
+											<div class="option" data-value="ge">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ge"></use>
+												</svg>
+												<p>Georgia (საქართველო)</p></div>
+											<div class="option" data-value="de">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#de"></use>
+												</svg>
+												<p>Germany (Deutschland)</p></div>
+											<div class="option" data-value="gh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gh"></use>
+												</svg>
+												<p>Ghana (Gaana)</p></div>
+											<div class="option" data-value="gi">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gi"></use>
+												</svg>
+												<p>Gibraltar</p></div>
+											<div class="option" data-value="gr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gr"></use>
+												</svg>
+												<p>Greece (Ελλάδα)</p></div>
+											<div class="option" data-value="gl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gl"></use>
+												</svg>
+												<p>Greenland (Kalaallit Nunaat)</p></div>
+											<div class="option" data-value="gd">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gd"></use>
+												</svg>
+												<p>Grenada</p></div>
+											<div class="option" data-value="gu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gu"></use>
+												</svg>
+												<p>Guam</p></div>
+											<div class="option" data-value="gt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gt"></use>
+												</svg>
+												<p>Guatemala</p></div>
+											<div class="option" data-value="gg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gg"></use>
+												</svg>
+												<p>Guernsey</p></div>
+											<div class="option" data-value="gn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gn"></use>
+												</svg>
+												<p>Guinea (Guinée)</p></div>
+											<div class="option" data-value="gw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gw"></use>
+												</svg>
+												<p>Guinea-Bissau (Guiné Bissau)</p></div>
+											<div class="option" data-value="ht">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ht"></use>
+												</svg>
+												<p>Haiti</p></div>
+											<div class="option" data-value="hn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hn"></use>
+												</svg>
+												<p>Honduras</p></div>
+											<div class="option" data-value="hk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hk"></use>
+												</svg>
+												<p>Hong Kong (香港)</p></div>
+											<div class="option" data-value="hu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hu"></use>
+												</svg>
+												<p>Hungary (Magyarország)</p></div>
+											<div class="option" data-value="is">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#is"></use>
+												</svg>
+												<p>Iceland (Ísland)</p></div>
+											<div class="option" data-value="in">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#in"></use>
+												</svg>
+												<p>India (भारत)</p></div>
+											<div class="option" data-value="id">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#id"></use>
+												</svg>
+												<p>Indonesia</p></div>
+											<div class="option" data-value="ir">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ir"></use>
+												</svg>
+												<p>Iran (&#x202B;ایران&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="iq">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#iq"></use>
+												</svg>
+												<p>Iraq (&#x202B;العراق&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="ie">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ie"></use>
+												</svg>
+												<p>Ireland</p></div>
+											<div class="option" data-value="im">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#im"></use>
+												</svg>
+												<p>Isle of Man</p></div>
+											<div class="option" data-value="il">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#il"></use>
+												</svg>
+												<p>Israel (&#x202B;ישראל&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="it">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#it"></use>
+												</svg>
+												<p>Italy (Italia)</p></div>
+											<div class="option" data-value="jm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#jm"></use>
+												</svg>
+												<p>Jamaica</p></div>
+											<div class="option" data-value="jp">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#jp"></use>
+												</svg>
+												<p>Japan (日本)</p></div>
+											<div class="option" data-value="je">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#je"></use>
+												</svg>
+												<p>Jersey</p></div>
+											<div class="option" data-value="jo">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#jo"></use>
+												</svg>
+												<p>Jordan (&#x202B;الأردن&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="kz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kz"></use>
+												</svg>
+												<p>Kazakhstan (Казахстан)</p></div>
+											<div class="option" data-value="ke">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ke"></use>
+												</svg>
+												<p>Kenya</p></div>
+											<div class="option" data-value="xk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#xk"></use>
+												</svg>
+												<p>Kosovo</p></div>
+											<div class="option" data-value="kw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kw"></use>
+												</svg>
+												<p>Kuwait (&#x202B;الكويت&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="kg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kg"></use>
+												</svg>
+												<p>Kyrgyzstan (Кыргызстан)</p></div>
+											<div class="option" data-value="la">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#la"></use>
+												</svg>
+												<p>Laos (ລາວ)</p></div>
+											<div class="option" data-value="lv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lv"></use>
+												</svg>
+												<p>Latvia (Latvija)</p></div>
+											<div class="option" data-value="lb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lb"></use>
+												</svg>
+												<p>Lebanon (&#x202B;لبنان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="ls">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ls"></use>
+												</svg>
+												<p>Lesotho</p></div>
+											<div class="option" data-value="lr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lr"></use>
+												</svg>
+												<p>Liberia</p></div>
+											<div class="option" data-value="ly">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ly"></use>
+												</svg>
+												<p>Libya (&#x202B;ليبيا&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="li">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#li"></use>
+												</svg>
+												<p>Liechtenstein</p></div>
+											<div class="option" data-value="lt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lt"></use>
+												</svg>
+												<p>Lithuania (Lietuva)</p></div>
+											<div class="option" data-value="lu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lu"></use>
+												</svg>
+												<p>Luxembourg</p></div>
+											<div class="option" data-value="mk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mk"></use>
+												</svg>
+												<p>Macedonia (FYROM) (Македонија)</p></div>
+											<div class="option" data-value="mg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mg"></use>
+												</svg>
+												<p>Madagascar (Madagasikara)</p></div>
+											<div class="option" data-value="mw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mw"></use>
+												</svg>
+												<p>Malawi</p></div>
+											<div class="option" data-value="my">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#my"></use>
+												</svg>
+												<p>Malaysia</p></div>
+											<div class="option" data-value="mv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mv"></use>
+												</svg>
+												<p>Maldives</p></div>
+											<div class="option" data-value="ml">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ml"></use>
+												</svg>
+												<p>Mali</p></div>
+											<div class="option" data-value="mt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mt"></use>
+												</svg>
+												<p>Malta</p></div>
+											<div class="option" data-value="mh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mh"></use>
+												</svg>
+												<p>Marshall Islands</p></div>
+											<div class="option" data-value="mr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mr"></use>
+												</svg>
+												<p>Mauritania (&#x202B;موريتانيا&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="mu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mu"></use>
+												</svg>
+												<p>Mauritius (Moris)</p></div>
+											<div class="option" data-value="mx">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mx"></use>
+												</svg>
+												<p>Mexico (México)</p></div>
+											<div class="option" data-value="fm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fm"></use>
+												</svg>
+												<p>Micronesia</p></div>
+											<div class="option" data-value="md">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#md"></use>
+												</svg>
+												<p>Moldova (Republica Moldova)</p></div>
+											<div class="option" data-value="mc">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mc"></use>
+												</svg>
+												<p>Monaco</p></div>
+											<div class="option" data-value="mn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mn"></use>
+												</svg>
+												<p>Mongolia (Монгол)</p></div>
+											<div class="option" data-value="me">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#me"></use>
+												</svg>
+												<p>Montenegro (Crna Gora)</p></div>
+											<div class="option" data-value="ms">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ms"></use>
+												</svg>
+												<p>Montserrat</p></div>
+											<div class="option" data-value="ma">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ma"></use>
+												</svg>
+												<p>Morocco (&#x202B;المغرب&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="mz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mz"></use>
+												</svg>
+												<p>Mozambique (Moçambique)</p></div>
+											<div class="option" data-value="mm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mm"></use>
+												</svg>
+												<p>Myanmar (Burma) (မြန်မာ)</p></div>
+											<div class="option" data-value="na">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#na"></use>
+												</svg>
+												<p>Namibia (Namibië)</p></div>
+											<div class="option" data-value="nr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nr"></use>
+												</svg>
+												<p>Nauru</p></div>
+											<div class="option" data-value="np">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#np"></use>
+												</svg>
+												<p>Nepal (नेपाल)</p></div>
+											<div class="option" data-value="nl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nl"></use>
+												</svg>
+												<p>Netherlands (Nederland)</p></div>
+											<div class="option" data-value="nz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nz"></use>
+												</svg>
+												<p>New Zealand</p></div>
+											<div class="option" data-value="ni">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ni"></use>
+												</svg>
+												<p>Nicaragua</p></div>
+											<div class="option" data-value="ne">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ne"></use>
+												</svg>
+												<p>Niger (Nijar)</p></div>
+											<div class="option" data-value="ng">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ng"></use>
+												</svg>
+												<p>Nigeria</p></div>
+											<div class="option" data-value="nu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nu"></use>
+												</svg>
+												<p>Niue</p></div>
+											<div class="option" data-value="kp">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kp"></use>
+												</svg>
+												<p>North Korea (조선 민주주의 인민 공화국)</p></div>
+											<div class="option" data-value="mp">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mp"></use>
+												</svg>
+												<p>Northern Mariana Islands</p></div>
+											<div class="option" data-value="no">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#no"></use>
+												</svg>
+												<p>Norway (Norge)</p></div>
+											<div class="option" data-value="om">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#om"></use>
+												</svg>
+												<p>Oman (&#x202B;عُمان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="pk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pk"></use>
+												</svg>
+												<p>Pakistan (&#x202B;پاکستان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="pw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pw"></use>
+												</svg>
+												<p>Palau</p></div>
+											<div class="option" data-value="ps">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ps"></use>
+												</svg>
+												<p>Palestine (&#x202B;فلسطين&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="pa">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pa"></use>
+												</svg>
+												<p>Panama (Panamá)</p></div>
+											<div class="option" data-value="pg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pg"></use>
+												</svg>
+												<p>Papua New Guinea</p></div>
+											<div class="option" data-value="py">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#py"></use>
+												</svg>
+												<p>Paraguay</p></div>
+											<div class="option" data-value="pe">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pe"></use>
+												</svg>
+												<p>Peru (Perú)</p></div>
+											<div class="option" data-value="ph">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ph"></use>
+												</svg>
+												<p>Philippines</p></div>
+											<div class="option" data-value="pl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pl"></use>
+												</svg>
+												<p>Poland (Polska)</p></div>
+											<div class="option" data-value="pt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pt"></use>
+												</svg>
+												<p>Portugal</p></div>
+											<div class="option" data-value="pr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pr"></use>
+												</svg>
+												<p>Puerto Rico</p></div>
+											<div class="option" data-value="qa">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#qa"></use>
+												</svg>
+												<p>Qatar (&#x202B;قطر&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="ro">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ro"></use>
+												</svg>
+												<p>Romania (România)</p></div>
+											<div class="option" data-value="ru">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ru"></use>
+												</svg>
+												<p>Russia (Россия)</p></div>
+											<div class="option" data-value="rw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#rw"></use>
+												</svg>
+												<p>Rwanda</p></div>
+											<div class="option" data-value="kn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kn"></use>
+												</svg>
+												<p>Saint Kitts and Nevis</p></div>
+											<div class="option" data-value="ws">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ws"></use>
+												</svg>
+												<p>Samoa</p></div>
+											<div class="option" data-value="sm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sm"></use>
+												</svg>
+												<p>San Marino</p></div>
+											<div class="option" data-value="st">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#st"></use>
+												</svg>
+												<p>São Tomé and Príncipe (São Tomé e Príncipe)</p></div>
+											<div class="option" data-value="sa">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sa"></use>
+												</svg>
+												<p>Saudi Arabia (&#x202B;المملكة العربية السعودية&#x202C;&lrm;)</p>
+											</div>
+											<div class="option" data-value="sn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sn"></use>
+												</svg>
+												<p>Senegal (Sénégal)</p></div>
+											<div class="option" data-value="rs">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#rs"></use>
+												</svg>
+												<p>Serbia (Србија)</p></div>
+											<div class="option" data-value="sc">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sc"></use>
+												</svg>
+												<p>Seychelles</p></div>
+											<div class="option" data-value="sl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sl"></use>
+												</svg>
+												<p>Sierra Leone</p></div>
+											<div class="option" data-value="sg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sg"></use>
+												</svg>
+												<p>Singapore</p></div>
+											<div class="option" data-value="sx">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sx"></use>
+												</svg>
+												<p>Sint Maarten</p></div>
+											<div class="option" data-value="sk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sk"></use>
+												</svg>
+												<p>Slovakia (Slovensko)</p></div>
+											<div class="option" data-value="si">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#si"></use>
+												</svg>
+												<p>Slovenia (Slovenija)</p></div>
+											<div class="option" data-value="sb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sb"></use>
+												</svg>
+												<p>Solomon Islands</p></div>
+											<div class="option" data-value="so">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#so"></use>
+												</svg>
+												<p>Somalia (Soomaaliya)</p></div>
+											<div class="option" data-value="za">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#za"></use>
+												</svg>
+												<p>South Africa</p></div>
+											<div class="option" data-value="kr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kr"></use>
+												</svg>
+												<p>South Korea (대한민국)</p></div>
+											<div class="option" data-value="ss">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ss"></use>
+												</svg>
+												<p>South Sudan (&#x202B;جنوب السودان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="es">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#es"></use>
+												</svg>
+												<p>Spain (España)</p></div>
+											<div class="option" data-value="lk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lk"></use>
+												</svg>
+												<p>Sri Lanka (ශ්&zwj;රී ලංකාව)</p></div>
+											<div class="option" data-value="sd">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sd"></use>
+												</svg>
+												<p>Sudan (&#x202B;السودان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="se">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#se"></use>
+												</svg>
+												<p>Sweden (Sverige)</p></div>
+											<div class="option" data-value="ch">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ch"></use>
+												</svg>
+												<p>Switzerland (Schweiz)</p></div>
+											<div class="option" data-value="sy">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sy"></use>
+												</svg>
+												<p>Syria (&#x202B;سوريا&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="tw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tw"></use>
+												</svg>
+												<p>Taiwan (台灣)</p></div>
+											<div class="option" data-value="tj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tj"></use>
+												</svg>
+												<p>Tajikistan</p></div>
+											<div class="option" data-value="tz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tz"></use>
+												</svg>
+												<p>Tanzania</p></div>
+											<div class="option" data-value="th">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#th"></use>
+												</svg>
+												<p>Thailand (ไทย)</p></div>
+											<div class="option" data-value="tl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tl"></use>
+												</svg>
+												<p>Timor-Leste</p></div>
+											<div class="option" data-value="tg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tg"></use>
+												</svg>
+												<p>Togo</p></div>
+											<div class="option" data-value="tk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tk"></use>
+												</svg>
+												<p>Tokelau</p></div>
+											<div class="option" data-value="to">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#to"></use>
+												</svg>
+												<p>Tonga</p></div>
+											<div class="option" data-value="tt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tt"></use>
+												</svg>
+												<p>Trinidad and Tobago</p></div>
+											<div class="option" data-value="tn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tn"></use>
+												</svg>
+												<p>Tunisia (&#x202B;تونس&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="tr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tr"></use>
+												</svg>
+												<p>Turkey (Türkiye)</p></div>
+											<div class="option" data-value="tm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tm"></use>
+												</svg>
+												<p>Turkmenistan</p></div>
+											<div class="option" data-value="ug">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ug"></use>
+												</svg>
+												<p>Uganda</p></div>
+											<div class="option" data-value="ua">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ua"></use>
+												</svg>
+												<p>Ukraine (Україна)</p></div>
+											<div class="option" data-value="ae">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ae"></use>
+												</svg>
+												<p>United Arab Emirates (&#x202B;الإمارات العربية
+													المتحدة&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="gb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gb"></use>
+												</svg>
+												<p>United Kingdom</p></div>
+											<div class="option" data-value="us">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#us"></use>
+												</svg>
+												<p>United States</p></div>
+											<div class="option" data-value="uy">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#uy"></use>
+												</svg>
+												<p>Uruguay</p></div>
+											<div class="option" data-value="uz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#uz"></use>
+												</svg>
+												<p>Uzbekistan (Oʻzbekiston)</p></div>
+											<div class="option" data-value="vu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#vu"></use>
+												</svg>
+												<p>Vanuatu</p></div>
+											<div class="option" data-value="va">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#va"></use>
+												</svg>
+												<p>Vatican City (Città del Vaticano)</p></div>
+											<div class="option" data-value="ve">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ve"></use>
+												</svg>
+												<p>Venezuela</p></div>
+											<div class="option" data-value="vn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#vn"></use>
+												</svg>
+												<p>Vietnam (Việt Nam)</p></div>
+											<div class="option" data-value="ye">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ye"></use>
+												</svg>
+												<p>Yemen (&#x202B;اليمن&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="zm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#zm"></use>
+												</svg>
+												<p>Zambia</p></div>
+										</div>
+									</div>
+								</div>
+								<input type="phone" class="change-text"
+									   data-lang-map-attr="placeholder:landings.fortune-wheel.placeholder-tel"
+									   data-form-field="phone" autocomplete="tel" placeholder="Номер телефона"></div>
+						</div>
+						<div class="form-field-wrapper" data-form-field-wrapper="">
+						</div>
+
+						<button class="reg-btn" onclick="onClickRegister('mobile')"
+								data-lang-key="landings.fortune-wheel.reg-btn">Зарегистрироваться
+						</button>
+
+					</div>
+					<div class="container_toggle" data-form="full">
+						<div class="form-field-wrapper" data-form-field-wrapper="">
+							<div class="select-wrapper dialog-show-btn dialog-show-btn_onclick" data-value="eur"
+								 data-form-field="currency"><span class="change-sub-text">€</span>
+								<p class="change-text"><span data-lang-key="common.currency.full.EUR">Евро</span> (EUR)
+								</p>
+								<svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="#fff"
+									 viewBox="0 0 285 285" width="8px" height="8px">
+									<path d="M282 77l-14-15a9 9 0 00-13 0L142 174 30 62a9 9 0 00-13 0L3 77a9 9 0 000 13l133 133a9 9 0 0013 0L282 90a9 9 0 000-13z"></path>
+								</svg>
+								<div class="dialog-menu-wrapper dialog-menu-wrapper_bottom">
+									<div class="dialog-menu">
+										<div class="option" data-value="aed"><span
+												class="change-sub-text-option">DH</span>
+											<p><span data-lang-key="common.currency.full.AED">Дирхам ОАЭ</span> (AED)
+											</p></div>
+										<div class="option" data-value="ars"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.ARS">Аргентинское песо</span>
+												(ARS)</p></div>
+										<div class="option" data-value="aud"><span
+												class="change-sub-text-option">$</span>
+											<p><span
+													data-lang-key="common.currency.full.AUD">Австралийский доллар</span>
+												(AUD)</p></div>
+										<div class="option" data-value="azn"><span
+												class="change-sub-text-option">₼</span>
+											<p><span
+													data-lang-key="common.currency.full.AZN">Азербайджанский манат</span>
+												(AZN)</p></div>
+										<div class="option" data-value="bdt"><span
+												class="change-sub-text-option">Tk</span>
+											<p><span data-lang-key="common.currency.full.BDT">Бангладешская така</span>
+												(BDT)</p></div>
+										<div class="option" data-value="brl"><span
+												class="change-sub-text-option">R$</span>
+											<p><span data-lang-key="common.currency.full.BRL">Бразильский реал</span>
+												(BRL)</p></div>
+										<div class="option" data-value="clp"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.CLP">Чилийское песо</span>
+												(CLP)</p></div>
+										<div class="option" data-value="cop"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.COP">Колумбийский песо</span>
+												(COP)</p></div>
+										<div class="option" data-value="crc"><span
+												class="change-sub-text-option">₡</span>
+											<p><span
+													data-lang-key="common.currency.full.CRC">Коста-риканский колон</span>
+												(CRC)</p></div>
+										<div class="option" data-value="eur"><span
+												class="change-sub-text-option">€</span>
+											<p><span data-lang-key="common.currency.full.EUR">Евро</span> (EUR)</p>
+										</div>
+										<div class="option" data-value="ghs"><span
+												class="change-sub-text-option">GH₵</span>
+											<p><span data-lang-key="common.currency.full.GHS">Ганский седи</span> (GHS)
+											</p></div>
+										<div class="option" data-value="hkd"><span
+												class="change-sub-text-option">HK$</span>
+											<p><span data-lang-key="common.currency.full.HKD">Гонконкский доллар</span>
+												(HKD)</p></div>
+										<div class="option" data-value="idr"><span
+												class="change-sub-text-option">Rp</span>
+											<p><span data-lang-key="common.currency.full.IDR">Индонезийская рупия</span>
+												(IDR)</p></div>
+										<div class="option" data-value="inr"><span
+												class="change-sub-text-option">₹</span>
+											<p><span data-lang-key="common.currency.full.INR">Индийская рупия</span>
+												(INR)</p></div>
+										<div class="option" data-value="iqd"><span
+												class="change-sub-text-option">IQD</span>
+											<p><span data-lang-key="common.currency.full.IQD">Иракский динар</span>
+												(IQD)</p></div>
+										<div class="option" data-value="irr"><span
+												class="change-sub-text-option">IRR</span>
+											<p><span data-lang-key="common.currency.full.IRR">Иранский реал</span> (IRR)
+											</p></div>
+										<div class="option" data-value="jod"><span
+												class="change-sub-text-option">JD</span>
+											<p><span data-lang-key="common.currency.full.JOD">Иорданский динар</span>
+												(JOD)</p></div>
+										<div class="option" data-value="kes"><span
+												class="change-sub-text-option">KSh</span>
+											<p><span data-lang-key="common.currency.full.KES">Кенийский шиллинг</span>
+												(KES)</p></div>
+										<div class="option" data-value="krw"><span
+												class="change-sub-text-option">₩</span>
+											<p><span data-lang-key="common.currency.full.KRW">Южнокорейская вона</span>
+												(KRW)</p></div>
+										<div class="option" data-value="kwd"><span
+												class="change-sub-text-option">KD</span>
+											<p><span data-lang-key="common.currency.full.KWD">Кувейтский динар</span>
+												(KWD)</p></div>
+										<div class="option" data-value="kzt"><span
+												class="change-sub-text-option">₸</span>
+											<p><span data-lang-key="common.currency.full.KZT">Казахстанский тенге</span>
+												(KZT)</p></div>
+										<div class="option" data-value="lkr"><span
+												class="change-sub-text-option">Rs</span>
+											<p><span
+													data-lang-key="common.currency.full.LKR">Шри-ланкийская рупия</span>
+												(LKR)</p></div>
+										<div class="option" data-value="mxn"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.MXN">Мексиканское песо</span>
+												(MXN)</p></div>
+										<div class="option" data-value="myr"><span
+												class="change-sub-text-option">RM</span>
+											<p><span data-lang-key="common.currency.full.MYR">Малазийский ринггит</span>
+												(MYR)</p></div>
+										<div class="option" data-value="omr"><span
+												class="change-sub-text-option">OMR</span>
+											<p><span data-lang-key="common.currency.full.OMR">Оманский реал</span> (OMR)
+											</p></div>
+										<div class="option" data-value="pab"><span
+												class="change-sub-text-option">B</span>
+											<p><span data-lang-key="common.currency.full.PAB">Панамский бальбоа</span>
+												(PAB)</p></div>
+										<div class="option" data-value="pen"><span
+												class="change-sub-text-option">S/</span>
+											<p><span
+													data-lang-key="common.currency.full.PEN">Перуанский новый соль</span>
+												(PEN)</p></div>
+										<div class="option" data-value="php"><span
+												class="change-sub-text-option">PhP</span>
+											<p><span data-lang-key="common.currency.full.PHP">Филиппинское песо</span>
+												(PHP)</p></div>
+										<div class="option" data-value="pkr"><span
+												class="change-sub-text-option">Rs</span>
+											<p><span data-lang-key="common.currency.full.PKR">Пакистанская рупия</span>
+												(PKR)</p></div>
+										<div class="option" data-value="pln"><span
+												class="change-sub-text-option">Zł</span>
+											<p><span data-lang-key="common.currency.full.PLN">Польский злотый</span>
+												(PLN)</p></div>
+										<div class="option" data-value="qar"><span
+												class="change-sub-text-option">QR</span>
+											<p><span data-lang-key="common.currency.full.QAR">Катарский реал</span>
+												(QAR)</p></div>
+										<div class="option" data-value="rub"><span
+												class="change-sub-text-option">₽</span>
+											<p><span data-lang-key="common.currency.full.RUB">Российский рубль</span>
+												(RUB)</p></div>
+										<div class="option" data-value="rwf"><span
+												class="change-sub-text-option">FRw</span>
+											<p><span data-lang-key="common.currency.full.RWF">Руандийский франк</span>
+												(RWF)</p></div>
+										<div class="option" data-value="sgd"><span
+												class="change-sub-text-option">S$</span>
+											<p><span data-lang-key="common.currency.full.SGD">Сингапурский доллар</span>
+												(SGD)</p></div>
+										<div class="option" data-value="thb"><span
+												class="change-sub-text-option">฿</span>
+											<p><span data-lang-key="common.currency.full.THB">Тайский бат</span> (THB)
+											</p></div>
+										<div class="option" data-value="tjs"><span
+												class="change-sub-text-option">С</span>
+											<p><span data-lang-key="common.currency.full.TJS">Таджикский сомони</span>
+												(TJS)</p></div>
+										<div class="option" data-value="try"><span
+												class="change-sub-text-option">₺</span>
+											<p><span data-lang-key="common.currency.full.TRY">Турецкая лира</span> (TRY)
+											</p></div>
+										<div class="option" data-value="tzs"><span
+												class="change-sub-text-option">TSh</span>
+											<p><span
+													data-lang-key="common.currency.full.TZS">Танзанийский шиллинг</span>
+												(TZS)</p></div>
+										<div class="option" data-value="uah"><span
+												class="change-sub-text-option">₴</span>
+											<p><span data-lang-key="common.currency.full.UAH">Украинская гривна</span>
+												(UAH)</p></div>
+										<div class="option" data-value="ugx"><span
+												class="change-sub-text-option">Ush</span>
+											<p><span data-lang-key="common.currency.full.UGX">Угандийский шиллинг</span>
+												(UGX)</p></div>
+										<div class="option" data-value="usd"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.USD">Доллар США</span> (USD)
+											</p></div>
+										<div class="option" data-value="uzs"><span
+												class="change-sub-text-option">S</span>
+											<p><span data-lang-key="common.currency.full.UZS">Узбекский сум</span> (UZS)
+											</p></div>
+										<div class="option" data-value="vnd"><span
+												class="change-sub-text-option">₫</span>
+											<p><span data-lang-key="common.currency.full.VND">Вьетнамский донг</span>
+												(VND)</p></div>
+										<div class="option" data-value="xaf"><span
+												class="change-sub-text-option">₣</span>
+											<p><span data-lang-key="common.currency.full.XAF">Франк КФА BEAC</span>
+												(XAF)</p></div>
+										<div class="option" data-value="xof"><span
+												class="change-sub-text-option">₣</span>
+											<p><span
+													data-lang-key="common.currency.full.XOF">Западноафриканский франк</span>
+												(XOF)</p></div>
+										<div class="option" data-value="zmw"><span
+												class="change-sub-text-option">ZK</span>
+											<p><span data-lang-key="common.currency.full.ZMW">Замбийская квача</span>
+												(ZMW)</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="form-field-wrapper" data-form-field-wrapper="" data-form-field-wrapper-phone="">
+							<div class="input-wrapper input-wrapper_phone">
+								<div class="select-wrapper dialog-show-btn dialog-show-btn_onclick" data-value="nl"
+									 data-form-field="country" data-form-field-avatar-type="svg-sprite">
+									<svg class="change-img avatar" xmlns="http://www.w3.org/2000/svg">
+										<use href="/img/flags.svg#nl"></use>
+									</svg>
+									<svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="#fff"
+										 viewBox="0 0 285 285" width="8px" height="8px">
+										<path d="M282 77l-14-15a9 9 0 00-13 0L142 174 30 62a9 9 0 00-13 0L3 77a9 9 0 000 13l133 133a9 9 0 0013 0L282 90a9 9 0 000-13z"></path>
+									</svg>
+									<div class="dialog-menu-wrapper dialog-menu-wrapper_bottom">
+										<div class="dialog-menu">
+											<div class="option" data-value="ru">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ru"></use>
+												</svg>
+												<p>Russia (Россия)</p></div>
+											<div class="option" data-value="ua">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ua"></use>
+												</svg>
+												<p>Ukraine (Україна)</p></div>
+											<div class="option" data-value="kz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kz"></use>
+												</svg>
+												<p>Kazakhstan (Казахстан)</p></div>
+											<div class="option" data-value="as">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#as"></use>
+												</svg>
+												<p>American Samoa</p></div>
+											<div class="option" data-value="ad">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ad"></use>
+												</svg>
+												<p>Andorra</p></div>
+											<div class="option" data-value="ao">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ao"></use>
+												</svg>
+												<p>Angola</p></div>
+											<div class="option" data-value="ai">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ai"></use>
+												</svg>
+												<p>Anguilla</p></div>
+											<div class="option" data-value="ag">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ag"></use>
+												</svg>
+												<p>Antigua and Barbuda</p></div>
+											<div class="option" data-value="ar">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ar"></use>
+												</svg>
+												<p>Argentina</p></div>
+											<div class="option" data-value="am">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#am"></use>
+												</svg>
+												<p>Armenia (Հայաստան)</p></div>
+											<div class="option" data-value="aw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#aw"></use>
+												</svg>
+												<p>Aruba</p></div>
+											<div class="option" data-value="au">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#au"></use>
+												</svg>
+												<p>Australia</p></div>
+											<div class="option" data-value="at">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#at"></use>
+												</svg>
+												<p>Austria (Österreich)</p></div>
+											<div class="option" data-value="az">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#az"></use>
+												</svg>
+												<p>Azerbaijan (Azərbaycan)</p></div>
+											<div class="option" data-value="bs">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bs"></use>
+												</svg>
+												<p>Bahamas</p></div>
+											<div class="option" data-value="bh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bh"></use>
+												</svg>
+												<p>Bahrain (&#x202B;البحرين&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="bd">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bd"></use>
+												</svg>
+												<p>Bangladesh (বাংলাদেশ)</p></div>
+											<div class="option" data-value="bb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bb"></use>
+												</svg>
+												<p>Barbados</p></div>
+											<div class="option" data-value="by">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#by"></use>
+												</svg>
+												<p>Belarus (Беларусь)</p></div>
+											<div class="option" data-value="be">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#be"></use>
+												</svg>
+												<p>Belgium (België)</p></div>
+											<div class="option" data-value="bz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bz"></use>
+												</svg>
+												<p>Belize</p></div>
+											<div class="option" data-value="bj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bj"></use>
+												</svg>
+												<p>Benin (Bénin)</p></div>
+											<div class="option" data-value="bm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bm"></use>
+												</svg>
+												<p>Bermuda</p></div>
+											<div class="option" data-value="bt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bt"></use>
+												</svg>
+												<p>Bhutan (འབྲུག)</p></div>
+											<div class="option" data-value="bo">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bo"></use>
+												</svg>
+												<p>Bolivia</p></div>
+											<div class="option" data-value="ba">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ba"></use>
+												</svg>
+												<p>Bosnia and Herzegovina (Босна и Херцеговина)</p></div>
+											<div class="option" data-value="bw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bw"></use>
+												</svg>
+												<p>Botswana</p></div>
+											<div class="option" data-value="br">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#br"></use>
+												</svg>
+												<p>Brazil (Brasil)</p></div>
+											<div class="option" data-value="io">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#io"></use>
+												</svg>
+												<p>British Indian Ocean Territory</p></div>
+											<div class="option" data-value="vg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#vg"></use>
+												</svg>
+												<p>British Virgin Islands</p></div>
+											<div class="option" data-value="bn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bn"></use>
+												</svg>
+												<p>Brunei</p></div>
+											<div class="option" data-value="bg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bg"></use>
+												</svg>
+												<p>Bulgaria (България)</p></div>
+											<div class="option" data-value="bf">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bf"></use>
+												</svg>
+												<p>Burkina Faso</p></div>
+											<div class="option" data-value="bi">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#bi"></use>
+												</svg>
+												<p>Burundi (Uburundi)</p></div>
+											<div class="option" data-value="kh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kh"></use>
+												</svg>
+												<p>Cambodia (កម្ពុជា)</p></div>
+											<div class="option" data-value="cm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cm"></use>
+												</svg>
+												<p>Cameroon (Cameroun)</p></div>
+											<div class="option" data-value="ca">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ca"></use>
+												</svg>
+												<p>Canada</p></div>
+											<div class="option" data-value="cv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cv"></use>
+												</svg>
+												<p>Cape Verde (Kabu Verdi)</p></div>
+											<div class="option" data-value="ky">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ky"></use>
+												</svg>
+												<p>Cayman Islands</p></div>
+											<div class="option" data-value="cf">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cf"></use>
+												</svg>
+												<p>Central African Republic (République centrafricaine)</p></div>
+											<div class="option" data-value="td">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#td"></use>
+												</svg>
+												<p>Chad (Tchad)</p></div>
+											<div class="option" data-value="cl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cl"></use>
+												</svg>
+												<p>Chile</p></div>
+											<div class="option" data-value="cn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cn"></use>
+												</svg>
+												<p>China (中国)</p></div>
+											<div class="option" data-value="cx">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cx"></use>
+												</svg>
+												<p>Christmas Island</p></div>
+											<div class="option" data-value="cc">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cc"></use>
+												</svg>
+												<p>Cocos (Keeling) Islands</p></div>
+											<div class="option" data-value="co">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#co"></use>
+												</svg>
+												<p>Colombia</p></div>
+											<div class="option" data-value="km">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#km"></use>
+												</svg>
+												<p>Comoros (&#x202B;جزر القمر&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="cg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cg"></use>
+												</svg>
+												<p>Congo (Republic) (Congo-Brazzaville)</p></div>
+											<div class="option" data-value="ck">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ck"></use>
+												</svg>
+												<p>Cook Islands</p></div>
+											<div class="option" data-value="cr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cr"></use>
+												</svg>
+												<p>Costa Rica</p></div>
+											<div class="option" data-value="ci">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ci"></use>
+												</svg>
+												<p>Côte d’Ivoire</p></div>
+											<div class="option" data-value="hr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hr"></use>
+												</svg>
+												<p>Croatia (Hrvatska)</p></div>
+											<div class="option" data-value="cu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cu"></use>
+												</svg>
+												<p>Cuba</p></div>
+											<div class="option" data-value="cw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cw"></use>
+												</svg>
+												<p>Curaçao</p></div>
+											<div class="option" data-value="cy">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cy"></use>
+												</svg>
+												<p>Cyprus (Κύπρος)</p></div>
+											<div class="option" data-value="cz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#cz"></use>
+												</svg>
+												<p>Czech Republic (Česká republika)</p></div>
+											<div class="option" data-value="dk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#dk"></use>
+												</svg>
+												<p>Denmark (Danmark)</p></div>
+											<div class="option" data-value="dj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#dj"></use>
+												</svg>
+												<p>Djibouti</p></div>
+											<div class="option" data-value="dm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#dm"></use>
+												</svg>
+												<p>Dominica</p></div>
+											<div class="option" data-value="do">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#do"></use>
+												</svg>
+												<p>Dominican Republic (República Dominicana)</p></div>
+											<div class="option" data-value="ec">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ec"></use>
+												</svg>
+												<p>Ecuador</p></div>
+											<div class="option" data-value="eg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#eg"></use>
+												</svg>
+												<p>Egypt (&#x202B;مصر&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="sv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sv"></use>
+												</svg>
+												<p>El Salvador</p></div>
+											<div class="option" data-value="gq">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gq"></use>
+												</svg>
+												<p>Equatorial Guinea (Guinea Ecuatorial)</p></div>
+											<div class="option" data-value="er">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#er"></use>
+												</svg>
+												<p>Eritrea</p></div>
+											<div class="option" data-value="ee">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ee"></use>
+												</svg>
+												<p>Estonia (Eesti)</p></div>
+											<div class="option" data-value="et">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#et"></use>
+												</svg>
+												<p>Ethiopia</p></div>
+											<div class="option" data-value="fk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fk"></use>
+												</svg>
+												<p>Falkland Islands (Islas Malvinas)</p></div>
+											<div class="option" data-value="fo">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fo"></use>
+												</svg>
+												<p>Faroe Islands (Føroyar)</p></div>
+											<div class="option" data-value="fj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fj"></use>
+												</svg>
+												<p>Fiji</p></div>
+											<div class="option" data-value="fi">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fi"></use>
+												</svg>
+												<p>Finland (Suomi)</p></div>
+											<div class="option" data-value="fr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fr"></use>
+												</svg>
+												<p>France</p></div>
+											<div class="option" data-value="pf">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pf"></use>
+												</svg>
+												<p>French Polynesia (Polynésie française)</p></div>
+											<div class="option" data-value="ga">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ga"></use>
+												</svg>
+												<p>Gabon</p></div>
+											<div class="option" data-value="gm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gm"></use>
+												</svg>
+												<p>Gambia</p></div>
+											<div class="option" data-value="ge">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ge"></use>
+												</svg>
+												<p>Georgia (საქართველო)</p></div>
+											<div class="option" data-value="de">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#de"></use>
+												</svg>
+												<p>Germany (Deutschland)</p></div>
+											<div class="option" data-value="gh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gh"></use>
+												</svg>
+												<p>Ghana (Gaana)</p></div>
+											<div class="option" data-value="gi">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gi"></use>
+												</svg>
+												<p>Gibraltar</p></div>
+											<div class="option" data-value="gr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gr"></use>
+												</svg>
+												<p>Greece (Ελλάδα)</p></div>
+											<div class="option" data-value="gl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gl"></use>
+												</svg>
+												<p>Greenland (Kalaallit Nunaat)</p></div>
+											<div class="option" data-value="gd">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gd"></use>
+												</svg>
+												<p>Grenada</p></div>
+											<div class="option" data-value="gu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gu"></use>
+												</svg>
+												<p>Guam</p></div>
+											<div class="option" data-value="gt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gt"></use>
+												</svg>
+												<p>Guatemala</p></div>
+											<div class="option" data-value="gg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gg"></use>
+												</svg>
+												<p>Guernsey</p></div>
+											<div class="option" data-value="gn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gn"></use>
+												</svg>
+												<p>Guinea (Guinée)</p></div>
+											<div class="option" data-value="gw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gw"></use>
+												</svg>
+												<p>Guinea-Bissau (Guiné Bissau)</p></div>
+											<div class="option" data-value="ht">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ht"></use>
+												</svg>
+												<p>Haiti</p></div>
+											<div class="option" data-value="hn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hn"></use>
+												</svg>
+												<p>Honduras</p></div>
+											<div class="option" data-value="hk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hk"></use>
+												</svg>
+												<p>Hong Kong (香港)</p></div>
+											<div class="option" data-value="hu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#hu"></use>
+												</svg>
+												<p>Hungary (Magyarország)</p></div>
+											<div class="option" data-value="is">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#is"></use>
+												</svg>
+												<p>Iceland (Ísland)</p></div>
+											<div class="option" data-value="in">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#in"></use>
+												</svg>
+												<p>India (भारत)</p></div>
+											<div class="option" data-value="id">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#id"></use>
+												</svg>
+												<p>Indonesia</p></div>
+											<div class="option" data-value="ir">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ir"></use>
+												</svg>
+												<p>Iran (&#x202B;ایران&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="iq">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#iq"></use>
+												</svg>
+												<p>Iraq (&#x202B;العراق&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="ie">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ie"></use>
+												</svg>
+												<p>Ireland</p></div>
+											<div class="option" data-value="im">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#im"></use>
+												</svg>
+												<p>Isle of Man</p></div>
+											<div class="option" data-value="il">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#il"></use>
+												</svg>
+												<p>Israel (&#x202B;ישראל&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="it">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#it"></use>
+												</svg>
+												<p>Italy (Italia)</p></div>
+											<div class="option" data-value="jm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#jm"></use>
+												</svg>
+												<p>Jamaica</p></div>
+											<div class="option" data-value="jp">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#jp"></use>
+												</svg>
+												<p>Japan (日本)</p></div>
+											<div class="option" data-value="je">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#je"></use>
+												</svg>
+												<p>Jersey</p></div>
+											<div class="option" data-value="jo">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#jo"></use>
+												</svg>
+												<p>Jordan (&#x202B;الأردن&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="kz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kz"></use>
+												</svg>
+												<p>Kazakhstan (Казахстан)</p></div>
+											<div class="option" data-value="ke">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ke"></use>
+												</svg>
+												<p>Kenya</p></div>
+											<div class="option" data-value="xk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#xk"></use>
+												</svg>
+												<p>Kosovo</p></div>
+											<div class="option" data-value="kw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kw"></use>
+												</svg>
+												<p>Kuwait (&#x202B;الكويت&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="kg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kg"></use>
+												</svg>
+												<p>Kyrgyzstan (Кыргызстан)</p></div>
+											<div class="option" data-value="la">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#la"></use>
+												</svg>
+												<p>Laos (ລາວ)</p></div>
+											<div class="option" data-value="lv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lv"></use>
+												</svg>
+												<p>Latvia (Latvija)</p></div>
+											<div class="option" data-value="lb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lb"></use>
+												</svg>
+												<p>Lebanon (&#x202B;لبنان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="ls">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ls"></use>
+												</svg>
+												<p>Lesotho</p></div>
+											<div class="option" data-value="lr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lr"></use>
+												</svg>
+												<p>Liberia</p></div>
+											<div class="option" data-value="ly">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ly"></use>
+												</svg>
+												<p>Libya (&#x202B;ليبيا&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="li">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#li"></use>
+												</svg>
+												<p>Liechtenstein</p></div>
+											<div class="option" data-value="lt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lt"></use>
+												</svg>
+												<p>Lithuania (Lietuva)</p></div>
+											<div class="option" data-value="lu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lu"></use>
+												</svg>
+												<p>Luxembourg</p></div>
+											<div class="option" data-value="mk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mk"></use>
+												</svg>
+												<p>Macedonia (FYROM) (Македонија)</p></div>
+											<div class="option" data-value="mg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mg"></use>
+												</svg>
+												<p>Madagascar (Madagasikara)</p></div>
+											<div class="option" data-value="mw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mw"></use>
+												</svg>
+												<p>Malawi</p></div>
+											<div class="option" data-value="my">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#my"></use>
+												</svg>
+												<p>Malaysia</p></div>
+											<div class="option" data-value="mv">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mv"></use>
+												</svg>
+												<p>Maldives</p></div>
+											<div class="option" data-value="ml">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ml"></use>
+												</svg>
+												<p>Mali</p></div>
+											<div class="option" data-value="mt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mt"></use>
+												</svg>
+												<p>Malta</p></div>
+											<div class="option" data-value="mh">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mh"></use>
+												</svg>
+												<p>Marshall Islands</p></div>
+											<div class="option" data-value="mr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mr"></use>
+												</svg>
+												<p>Mauritania (&#x202B;موريتانيا&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="mu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mu"></use>
+												</svg>
+												<p>Mauritius (Moris)</p></div>
+											<div class="option" data-value="mx">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mx"></use>
+												</svg>
+												<p>Mexico (México)</p></div>
+											<div class="option" data-value="fm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#fm"></use>
+												</svg>
+												<p>Micronesia</p></div>
+											<div class="option" data-value="md">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#md"></use>
+												</svg>
+												<p>Moldova (Republica Moldova)</p></div>
+											<div class="option" data-value="mc">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mc"></use>
+												</svg>
+												<p>Monaco</p></div>
+											<div class="option" data-value="mn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mn"></use>
+												</svg>
+												<p>Mongolia (Монгол)</p></div>
+											<div class="option" data-value="me">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#me"></use>
+												</svg>
+												<p>Montenegro (Crna Gora)</p></div>
+											<div class="option" data-value="ms">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ms"></use>
+												</svg>
+												<p>Montserrat</p></div>
+											<div class="option" data-value="ma">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ma"></use>
+												</svg>
+												<p>Morocco (&#x202B;المغرب&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="mz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mz"></use>
+												</svg>
+												<p>Mozambique (Moçambique)</p></div>
+											<div class="option" data-value="mm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mm"></use>
+												</svg>
+												<p>Myanmar (Burma) (မြန်မာ)</p></div>
+											<div class="option" data-value="na">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#na"></use>
+												</svg>
+												<p>Namibia (Namibië)</p></div>
+											<div class="option" data-value="nr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nr"></use>
+												</svg>
+												<p>Nauru</p></div>
+											<div class="option" data-value="np">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#np"></use>
+												</svg>
+												<p>Nepal (नेपाल)</p></div>
+											<div class="option" data-value="nl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nl"></use>
+												</svg>
+												<p>Netherlands (Nederland)</p></div>
+											<div class="option" data-value="nz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nz"></use>
+												</svg>
+												<p>New Zealand</p></div>
+											<div class="option" data-value="ni">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ni"></use>
+												</svg>
+												<p>Nicaragua</p></div>
+											<div class="option" data-value="ne">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ne"></use>
+												</svg>
+												<p>Niger (Nijar)</p></div>
+											<div class="option" data-value="ng">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ng"></use>
+												</svg>
+												<p>Nigeria</p></div>
+											<div class="option" data-value="nu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#nu"></use>
+												</svg>
+												<p>Niue</p></div>
+											<div class="option" data-value="kp">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kp"></use>
+												</svg>
+												<p>North Korea (조선 민주주의 인민 공화국)</p></div>
+											<div class="option" data-value="mp">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#mp"></use>
+												</svg>
+												<p>Northern Mariana Islands</p></div>
+											<div class="option" data-value="no">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#no"></use>
+												</svg>
+												<p>Norway (Norge)</p></div>
+											<div class="option" data-value="om">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#om"></use>
+												</svg>
+												<p>Oman (&#x202B;عُمان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="pk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pk"></use>
+												</svg>
+												<p>Pakistan (&#x202B;پاکستان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="pw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pw"></use>
+												</svg>
+												<p>Palau</p></div>
+											<div class="option" data-value="ps">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ps"></use>
+												</svg>
+												<p>Palestine (&#x202B;فلسطين&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="pa">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pa"></use>
+												</svg>
+												<p>Panama (Panamá)</p></div>
+											<div class="option" data-value="pg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pg"></use>
+												</svg>
+												<p>Papua New Guinea</p></div>
+											<div class="option" data-value="py">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#py"></use>
+												</svg>
+												<p>Paraguay</p></div>
+											<div class="option" data-value="pe">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pe"></use>
+												</svg>
+												<p>Peru (Perú)</p></div>
+											<div class="option" data-value="ph">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ph"></use>
+												</svg>
+												<p>Philippines</p></div>
+											<div class="option" data-value="pl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pl"></use>
+												</svg>
+												<p>Poland (Polska)</p></div>
+											<div class="option" data-value="pt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pt"></use>
+												</svg>
+												<p>Portugal</p></div>
+											<div class="option" data-value="pr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#pr"></use>
+												</svg>
+												<p>Puerto Rico</p></div>
+											<div class="option" data-value="qa">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#qa"></use>
+												</svg>
+												<p>Qatar (&#x202B;قطر&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="ro">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ro"></use>
+												</svg>
+												<p>Romania (România)</p></div>
+											<div class="option" data-value="ru">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ru"></use>
+												</svg>
+												<p>Russia (Россия)</p></div>
+											<div class="option" data-value="rw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#rw"></use>
+												</svg>
+												<p>Rwanda</p></div>
+											<div class="option" data-value="kn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kn"></use>
+												</svg>
+												<p>Saint Kitts and Nevis</p></div>
+											<div class="option" data-value="ws">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ws"></use>
+												</svg>
+												<p>Samoa</p></div>
+											<div class="option" data-value="sm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sm"></use>
+												</svg>
+												<p>San Marino</p></div>
+											<div class="option" data-value="st">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#st"></use>
+												</svg>
+												<p>São Tomé and Príncipe (São Tomé e Príncipe)</p></div>
+											<div class="option" data-value="sa">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sa"></use>
+												</svg>
+												<p>Saudi Arabia (&#x202B;المملكة العربية السعودية&#x202C;&lrm;)</p>
+											</div>
+											<div class="option" data-value="sn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sn"></use>
+												</svg>
+												<p>Senegal (Sénégal)</p></div>
+											<div class="option" data-value="rs">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#rs"></use>
+												</svg>
+												<p>Serbia (Србија)</p></div>
+											<div class="option" data-value="sc">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sc"></use>
+												</svg>
+												<p>Seychelles</p></div>
+											<div class="option" data-value="sl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sl"></use>
+												</svg>
+												<p>Sierra Leone</p></div>
+											<div class="option" data-value="sg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sg"></use>
+												</svg>
+												<p>Singapore</p></div>
+											<div class="option" data-value="sx">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sx"></use>
+												</svg>
+												<p>Sint Maarten</p></div>
+											<div class="option" data-value="sk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sk"></use>
+												</svg>
+												<p>Slovakia (Slovensko)</p></div>
+											<div class="option" data-value="si">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#si"></use>
+												</svg>
+												<p>Slovenia (Slovenija)</p></div>
+											<div class="option" data-value="sb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sb"></use>
+												</svg>
+												<p>Solomon Islands</p></div>
+											<div class="option" data-value="so">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#so"></use>
+												</svg>
+												<p>Somalia (Soomaaliya)</p></div>
+											<div class="option" data-value="za">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#za"></use>
+												</svg>
+												<p>South Africa</p></div>
+											<div class="option" data-value="kr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#kr"></use>
+												</svg>
+												<p>South Korea (대한민국)</p></div>
+											<div class="option" data-value="ss">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ss"></use>
+												</svg>
+												<p>South Sudan (&#x202B;جنوب السودان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="es">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#es"></use>
+												</svg>
+												<p>Spain (España)</p></div>
+											<div class="option" data-value="lk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#lk"></use>
+												</svg>
+												<p>Sri Lanka (ශ්&zwj;රී ලංකාව)</p></div>
+											<div class="option" data-value="sd">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sd"></use>
+												</svg>
+												<p>Sudan (&#x202B;السودان&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="se">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#se"></use>
+												</svg>
+												<p>Sweden (Sverige)</p></div>
+											<div class="option" data-value="ch">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ch"></use>
+												</svg>
+												<p>Switzerland (Schweiz)</p></div>
+											<div class="option" data-value="sy">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#sy"></use>
+												</svg>
+												<p>Syria (&#x202B;سوريا&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="tw">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tw"></use>
+												</svg>
+												<p>Taiwan (台灣)</p></div>
+											<div class="option" data-value="tj">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tj"></use>
+												</svg>
+												<p>Tajikistan</p></div>
+											<div class="option" data-value="tz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tz"></use>
+												</svg>
+												<p>Tanzania</p></div>
+											<div class="option" data-value="th">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#th"></use>
+												</svg>
+												<p>Thailand (ไทย)</p></div>
+											<div class="option" data-value="tl">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tl"></use>
+												</svg>
+												<p>Timor-Leste</p></div>
+											<div class="option" data-value="tg">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tg"></use>
+												</svg>
+												<p>Togo</p></div>
+											<div class="option" data-value="tk">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tk"></use>
+												</svg>
+												<p>Tokelau</p></div>
+											<div class="option" data-value="to">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#to"></use>
+												</svg>
+												<p>Tonga</p></div>
+											<div class="option" data-value="tt">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tt"></use>
+												</svg>
+												<p>Trinidad and Tobago</p></div>
+											<div class="option" data-value="tn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tn"></use>
+												</svg>
+												<p>Tunisia (&#x202B;تونس&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="tr">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tr"></use>
+												</svg>
+												<p>Turkey (Türkiye)</p></div>
+											<div class="option" data-value="tm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#tm"></use>
+												</svg>
+												<p>Turkmenistan</p></div>
+											<div class="option" data-value="ug">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ug"></use>
+												</svg>
+												<p>Uganda</p></div>
+											<div class="option" data-value="ua">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ua"></use>
+												</svg>
+												<p>Ukraine (Україна)</p></div>
+											<div class="option" data-value="ae">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ae"></use>
+												</svg>
+												<p>United Arab Emirates (&#x202B;الإمارات العربية
+													المتحدة&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="gb">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#gb"></use>
+												</svg>
+												<p>United Kingdom</p></div>
+											<div class="option" data-value="us">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#us"></use>
+												</svg>
+												<p>United States</p></div>
+											<div class="option" data-value="uy">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#uy"></use>
+												</svg>
+												<p>Uruguay</p></div>
+											<div class="option" data-value="uz">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#uz"></use>
+												</svg>
+												<p>Uzbekistan (Oʻzbekiston)</p></div>
+											<div class="option" data-value="vu">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#vu"></use>
+												</svg>
+												<p>Vanuatu</p></div>
+											<div class="option" data-value="va">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#va"></use>
+												</svg>
+												<p>Vatican City (Città del Vaticano)</p></div>
+											<div class="option" data-value="ve">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ve"></use>
+												</svg>
+												<p>Venezuela</p></div>
+											<div class="option" data-value="vn">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#vn"></use>
+												</svg>
+												<p>Vietnam (Việt Nam)</p></div>
+											<div class="option" data-value="ye">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#ye"></use>
+												</svg>
+												<p>Yemen (&#x202B;اليمن&#x202C;&lrm;)</p></div>
+											<div class="option" data-value="zm">
+												<svg class="avatar" xmlns="http://www.w3.org/2000/svg">
+													<use href="/img/flags.svg#zm"></use>
+												</svg>
+												<p>Zambia</p></div>
+										</div>
+									</div>
+								</div>
+								<input type="phone" class="change-text"
+									   data-lang-map-attr="placeholder:landings.fortune-wheel.placeholder-tel"
+									   data-form-field="phone" autocomplete="tel" placeholder="Номер телефона"></div>
+						</div>
+						<div class="form-field-wrapper" data-form-field-wrapper=""><input type="email"
+																						  placeholder="Email"
+																						  data-form-field="email"
+																						  autocomplete="email"></div>
+						<div class="form-field-wrapper" data-form-field-wrapper=""><input type="password"
+																						  data-lang-map-attr="placeholder:landings.fortune-wheel.placeholder-password"
+																						  data-form-field="password"
+																						  autocomplete="new-password"
+																						  placeholder="Пароль"></div>
+						<div class="agreement"><span data-lang-key="landings.fortune-wheel.reg-agreement-text">Я подтверждаю, что я ознакомлен и полностью согласен с</span><br><a
+								class="go-to-rules-btn" href="https://1wyrc.top/rules/4" target="_blank"
+								data-lang-key="landings.fortune-wheel.reg-agreement-link">Условиями Соглашения об
+							использовании сайта 1Win</a></div>
+						<button class="reg-btn" onclick="onClickRegister('full', event)"
+								data-lang-key="landings.fortune-wheel.reg-btn">Зарегистрироваться
+						</button>
+					</div>
+					<div class="container_toggle" data-form="social">
+						<div class="flexRow" data-form-field="social" data-value="">
+							<div class="soc-wrapper vk" data-value="vk">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="15" viewBox="0 0 24 15">
+									<defs>
+										<linearGradient id="56dqpx9c0a" x1="-24.438%" x2="108.889%" y1="8.458%"
+														y2="85.738%">
+											<stop offset="0%" stop-color="#2089DD"></stop>
+											<stop offset="100%" stop-color="#0A5EBB"></stop>
+										</linearGradient>
+									</defs>
+									<g fill="url(#56dqpx9c0a)" transform="translate(-597 -372)">
+										<path d="M12.74 19.88h1.439s.435-.05.656-.296c.205-.226.198-.652.198-.652s-.027-1.993.868-2.284c.884-.288 2.018 1.924 3.22 2.775.91.644 1.602.503 1.602.503l3.215-.046s1.682-.107.885-1.471c-.065-.112-.464-1.008-2.391-2.851-2.017-1.93-1.747-1.618.682-4.954C24.594 8.572 25.184 7.33 25 6.8c-.177-.507-1.265-.373-1.265-.373l-3.62.023c-.16-.018-.321.011-.464.086-.195.12-.32.398-.32.398s-.573 1.573-1.337 2.91c-1.612 2.822-2.257 2.972-2.52 2.796-.613-.408-.46-1.64-.46-2.516 0-2.734.402-3.874-.783-4.17-.394-.098-.684-.16-1.69-.173-1.292-.014-2.385.004-3.004.319-.412.208-.73.67-.536.697.239.033.781.15 1.069.554.37.52.358 1.69.358 1.69s.213 3.219-.498 3.618c-.488.275-1.16-.285-2.595-2.845-.488-.891-.92-1.814-1.293-2.762-.066-.16-.168-.303-.298-.416-.168-.115-.358-.193-.556-.23l-3.44.022s-.517.015-.707.246c-.168.207-.013.633-.013.633s2.692 6.498 5.743 9.766c2.798 3.004 5.969 2.807 5.969 2.807"
+											  transform="translate(558 357) translate(38 10)"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="soc-wrapper ok" data-value="ok">
+								<svg xmlns="http://www.w3.org/2000/svg" width="13" height="22" viewBox="0 0 13 22">
+									<defs>
+										<linearGradient id="4o6pb9q5va" x1="28.812%" x2="68%" y1="-38.386%"
+														y2="92.797%">
+											<stop offset="0%" stop-color="#F9C240"></stop>
+											<stop offset="100%" stop-color="#FF8900"></stop>
+										</linearGradient>
+									</defs>
+									<g fill="url(#4o6pb9q5va)" transform="translate(-826 -369)">
+										<path d="M9.421 13.641c1.323.89 2.799 1.246 4.389 1.195 1.269-.041 2.456-.368 3.53-1.039.237-.148.462-.307.747-.364.725-.158 1.465.2 1.772.856.308.657.099 1.433-.5 1.86-.8.574-1.692.97-2.634 1.267-.347.109-.7.193-1.058.271.007.07.064.094.101.13l3.331 3.21c.49.471.624 1.118.369 1.702-.196.46-.613.798-1.115.903-.501.104-1.024-.038-1.397-.38-.854-.78-1.685-1.586-2.525-2.38-.27-.254-.543-.505-.809-.764-.09-.089-.136-.079-.217.008-.979 1.017-1.96 2.032-2.943 3.046-.52.535-1.301.656-1.928.31-.427-.23-.72-.639-.793-1.107-.072-.469.084-.944.424-1.284.441-.459.89-.909 1.34-1.362l1.826-1.855c.056-.041.1-.096.127-.158-.637-.125-1.261-.304-1.866-.534-.677-.252-1.319-.586-1.91-.993-.553-.392-.785-.93-.64-1.581.147-.652.577-1.041 1.245-1.172.392-.086.804-.007 1.134.215zM17.69 3.65c1.65 1.607 2.141 4.022 1.243 6.118-.9 2.095-3.01 3.459-5.349 3.454-3.19-.005-5.773-2.52-5.769-5.617.003-2.27 1.414-4.315 3.576-5.18 2.161-.866 4.648-.383 6.299 1.225zm-5.025 1.819c-.891.363-1.47 1.212-1.465 2.15.013 1.278 1.083 2.308 2.4 2.308.966-.004 1.836-.573 2.202-1.441.366-.869.157-1.866-.53-2.526-.687-.66-1.716-.855-2.607-.491z"
+											  transform="translate(781 357) translate(38 10)"></path>
+									</g>
+								</svg>
+							</div>
+							<div class="soc-wrapper google" data-value="google">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19" height="20" viewBox="0 0 19 20">
+									<path fill="#4285F4"
+										  d="M17.91 9.363c0-.62-.05-1.244-.157-1.853H9.151v3.511h4.926c-.204 1.133-.86 2.135-1.823 2.772v2.278h2.94c1.725-1.588 2.717-3.934 2.717-6.708z"
+										  transform="translate(-711 -370) translate(670 357) translate(38 10) translate(3.852 3.852)"></path>
+									<path fill="#34A853"
+										  d="M9.151 18.273c2.46 0 4.534-.808 6.046-2.202l-2.94-2.278c-.817.556-1.872.87-3.102.87-2.38 0-4.397-1.604-5.12-3.762H1.002v2.349c1.548 3.08 4.701 5.023 8.15 5.023z"
+										  transform="translate(-711 -370) translate(670 357) translate(38 10) translate(3.852 3.852)"></path>
+									<path fill="#FBBC04"
+										  d="M4.031 10.9c-.382-1.132-.382-2.358 0-3.491V5.06h-3.03c-1.293 2.577-1.293 5.613 0 8.19l3.03-2.35z"
+										  transform="translate(-711 -370) translate(670 357) translate(38 10) translate(3.852 3.852)"></path>
+									<path fill="#EA4335"
+										  d="M9.151 3.643c1.3-.02 2.557.469 3.499 1.367l2.604-2.604C13.604.858 11.417.006 9.15.034c-3.448 0-6.6 1.943-8.15 5.026l3.03 2.349c.72-2.161 2.741-3.766 5.12-3.766z"
+										  transform="translate(-711 -370) translate(670 357) translate(38 10) translate(3.852 3.852)"></path>
+								</svg>
+							</div>
+							<div class="soc-wrapper yandex" data-value="yandex">
+								<svg xmlns="http://www.w3.org/2000/svg" width="9" height="18" viewBox="0 0 9 18">
+									<g fill="none" fill-rule="evenodd">
+										<g fill="#ff0000" fill-rule="nonzero">
+											<g>
+												<path d="M15.078 17.102L12.142 24H10l3.225-7.376c-1.516-.806-2.527-2.266-2.527-4.96C10.698 7.888 12.984 6 15.703 6h2.768v18h-1.853v-6.898h-1.54zm1.54-9.466h-.987c-1.492 0-2.936 1.033-2.936 4.028 0 2.895 1.324 3.827 2.936 3.827h.987V7.636z"
+													  transform="translate(-167 -158) translate(157 152)"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<div class="soc-wrapper mailru" data-value="mailru">
+								<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+									<g fill="none" fill-rule="evenodd">
+										<g fill="#FF9E00" fill-rule="nonzero">
+											<g>
+												<path d="M17.707 15c0 1.493-1.214 2.707-2.707 2.707-1.493 0-2.707-1.214-2.707-2.707 0-1.493 1.214-2.707 2.707-2.707 1.493 0 2.707 1.214 2.707 2.707M15 6c-4.963 0-9 4.037-9 9s4.037 9 9 9c1.818 0 3.571-.541 5.07-1.565l.025-.018-1.212-1.41-.02.013c-1.154.743-2.49 1.135-3.863 1.135-3.945 0-7.155-3.21-7.155-7.155 0-3.945 3.21-7.155 7.155-7.155 3.945 0 7.155 3.21 7.155 7.155 0 .511-.057 1.029-.168 1.538-.227.929-.877 1.213-1.365 1.175-.491-.04-1.066-.39-1.07-1.245V15c0-2.51-2.042-4.552-4.552-4.552S10.448 12.49 10.448 15 12.49 19.552 15 19.552c1.22 0 2.363-.476 3.225-1.343.502.78 1.319 1.27 2.249 1.344.08.006.161.01.242.01.655 0 1.303-.22 1.827-.616.539-.41.942-1.003 1.165-1.714.035-.115.1-.378.1-.38l.002-.01c.132-.57.19-1.14.19-1.843 0-4.963-4.037-9-9-9"
+													  transform="translate(-202 -158) translate(196 152)"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<div class="soc-wrapper telegram" data-value="telegram">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16">
+									<defs>
+										<linearGradient id="e74w56gifa" x1="66%" x2="85.1%" y1="43.7%" y2="80.2%">
+											<stop offset="0%" stop-color="#EFF7FC"></stop>
+											<stop offset="100%" stop-color="#FFF"></stop>
+										</linearGradient>
+									</defs>
+									<g fill="none" fill-rule="evenodd">
+										<g fill-rule="nonzero">
+											<g>
+												<g>
+													<path fill="#C8DAEA"
+														  d="M7.077 14.826c-.56 0-.465-.212-.659-.746L4.77 8.655l12.689-7.527"
+														  transform="translate(-240 -159) translate(235 152) translate(5 7)"></path>
+													<path fill="#A9C9DD"
+														  d="M7.077 14.826c.433 0 .624-.198.865-.433l2.307-2.243-2.878-1.736"
+														  transform="translate(-240 -159) translate(235 152) translate(5 7)"></path>
+													<path fill="url(#e74w56gifa)"
+														  d="M7.371 10.415l6.973 5.152c.796.439 1.37.211 1.568-.74l2.839-13.375C19.04.287 18.307-.24 17.545.104L.878 6.531c-1.137.456-1.13 1.091-.207 1.374L4.948 9.24l9.902-6.247c.468-.284.897-.131.545.181"
+														  transform="translate(-240 -159) translate(235 152) translate(5 7)"></path>
+												</g>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</div>
+							<div class="soc-wrapper steam" data-value="steam">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 18">
+									<g fill="none" fill-rule="evenodd">
+										<g fill="#627997" fill-rule="nonzero">
+											<g>
+												<path d="M13.92 12.028v.065l-3.21 4.698c-.52-.024-1.043.068-1.538.273-.218.09-.423.2-.614.327l-12.652-5.163s-.163 2.703.517 4.718l10.585 4.31c.25 1.127 1.018 2.115 2.15 2.59 1.852.78 3.988-.108 4.758-1.974.2-.488.294-1 .28-1.51l4.596-3.307.112.002c2.75 0 4.985-2.257 4.985-5.03C23.889 9.256 21.654 7 18.904 7c-2.748 0-4.984 2.255-4.984 5.028zM9.477 23.073c-.66-.277-1.158-.784-1.445-1.388l1.623.677c1.054.442 2.264-.061 2.703-1.123.44-1.063-.06-2.284-1.113-2.726l-1.678-.7c.647-.247 1.383-.256 2.07.032.694.29 1.232.837 1.517 1.536.285.698.283 1.47-.005 2.166-.596 1.442-2.242 2.126-3.672 1.526zm6.106-11.045c0-1.846 1.49-3.35 3.321-3.35 1.832 0 3.322 1.504 3.322 3.35 0 1.848-1.49 3.35-3.322 3.35-1.83 0-3.32-1.502-3.32-3.35zm3.327-2.523c1.378 0 2.495 1.128 2.495 2.518s-1.117 2.516-2.495 2.516c-1.377 0-2.494-1.126-2.494-2.516 0-1.39 1.117-2.518 2.494-2.518z"
+													  transform="translate(-313 -159) translate(313 152)"></path>
+											</g>
+										</g>
+									</g>
+								</svg>
+							</div>
+						</div>
+						<div class="social-select-error hidden"></div>
+						<div class="form-field-wrapper" data-form-field-wrapper="">
+							<div class="select-wrapper dialog-show-btn dialog-show-btn_onclick" data-value="eur"
+								 data-form-field="currency"><span class="change-sub-text">€</span>
+								<p class="change-text"><span data-lang-key="common.currency.full.EUR">Евро</span> (EUR)
+								</p>
+								<svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="#fff"
+									 viewBox="0 0 285 285" width="8px" height="8px">
+									<path d="M282 77l-14-15a9 9 0 00-13 0L142 174 30 62a9 9 0 00-13 0L3 77a9 9 0 000 13l133 133a9 9 0 0013 0L282 90a9 9 0 000-13z"></path>
+								</svg>
+								<div class="dialog-menu-wrapper dialog-menu-wrapper_bottom">
+									<div class="dialog-menu">
+										<div class="option" data-value="aed"><span
+												class="change-sub-text-option">DH</span>
+											<p><span data-lang-key="common.currency.full.AED">Дирхам ОАЭ</span> (AED)
+											</p></div>
+										<div class="option" data-value="ars"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.ARS">Аргентинское песо</span>
+												(ARS)</p></div>
+										<div class="option" data-value="aud"><span
+												class="change-sub-text-option">$</span>
+											<p><span
+													data-lang-key="common.currency.full.AUD">Австралийский доллар</span>
+												(AUD)</p></div>
+										<div class="option" data-value="azn"><span
+												class="change-sub-text-option">₼</span>
+											<p><span
+													data-lang-key="common.currency.full.AZN">Азербайджанский манат</span>
+												(AZN)</p></div>
+										<div class="option" data-value="bdt"><span
+												class="change-sub-text-option">Tk</span>
+											<p><span data-lang-key="common.currency.full.BDT">Бангладешская така</span>
+												(BDT)</p></div>
+										<div class="option" data-value="brl"><span
+												class="change-sub-text-option">R$</span>
+											<p><span data-lang-key="common.currency.full.BRL">Бразильский реал</span>
+												(BRL)</p></div>
+										<div class="option" data-value="clp"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.CLP">Чилийское песо</span>
+												(CLP)</p></div>
+										<div class="option" data-value="cop"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.COP">Колумбийский песо</span>
+												(COP)</p></div>
+										<div class="option" data-value="crc"><span
+												class="change-sub-text-option">₡</span>
+											<p><span
+													data-lang-key="common.currency.full.CRC">Коста-риканский колон</span>
+												(CRC)</p></div>
+										<div class="option" data-value="eur"><span
+												class="change-sub-text-option">€</span>
+											<p><span data-lang-key="common.currency.full.EUR">Евро</span> (EUR)</p>
+										</div>
+										<div class="option" data-value="ghs"><span
+												class="change-sub-text-option">GH₵</span>
+											<p><span data-lang-key="common.currency.full.GHS">Ганский седи</span> (GHS)
+											</p></div>
+										<div class="option" data-value="hkd"><span
+												class="change-sub-text-option">HK$</span>
+											<p><span data-lang-key="common.currency.full.HKD">Гонконкский доллар</span>
+												(HKD)</p></div>
+										<div class="option" data-value="idr"><span
+												class="change-sub-text-option">Rp</span>
+											<p><span data-lang-key="common.currency.full.IDR">Индонезийская рупия</span>
+												(IDR)</p></div>
+										<div class="option" data-value="inr"><span
+												class="change-sub-text-option">₹</span>
+											<p><span data-lang-key="common.currency.full.INR">Индийская рупия</span>
+												(INR)</p></div>
+										<div class="option" data-value="iqd"><span
+												class="change-sub-text-option">IQD</span>
+											<p><span data-lang-key="common.currency.full.IQD">Иракский динар</span>
+												(IQD)</p></div>
+										<div class="option" data-value="irr"><span
+												class="change-sub-text-option">IRR</span>
+											<p><span data-lang-key="common.currency.full.IRR">Иранский реал</span> (IRR)
+											</p></div>
+										<div class="option" data-value="jod"><span
+												class="change-sub-text-option">JD</span>
+											<p><span data-lang-key="common.currency.full.JOD">Иорданский динар</span>
+												(JOD)</p></div>
+										<div class="option" data-value="kes"><span
+												class="change-sub-text-option">KSh</span>
+											<p><span data-lang-key="common.currency.full.KES">Кенийский шиллинг</span>
+												(KES)</p></div>
+										<div class="option" data-value="krw"><span
+												class="change-sub-text-option">₩</span>
+											<p><span data-lang-key="common.currency.full.KRW">Южнокорейская вона</span>
+												(KRW)</p></div>
+										<div class="option" data-value="kwd"><span
+												class="change-sub-text-option">KD</span>
+											<p><span data-lang-key="common.currency.full.KWD">Кувейтский динар</span>
+												(KWD)</p></div>
+										<div class="option" data-value="kzt"><span
+												class="change-sub-text-option">₸</span>
+											<p><span data-lang-key="common.currency.full.KZT">Казахстанский тенге</span>
+												(KZT)</p></div>
+										<div class="option" data-value="lkr"><span
+												class="change-sub-text-option">Rs</span>
+											<p><span
+													data-lang-key="common.currency.full.LKR">Шри-ланкийская рупия</span>
+												(LKR)</p></div>
+										<div class="option" data-value="mxn"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.MXN">Мексиканское песо</span>
+												(MXN)</p></div>
+										<div class="option" data-value="myr"><span
+												class="change-sub-text-option">RM</span>
+											<p><span data-lang-key="common.currency.full.MYR">Малазийский ринггит</span>
+												(MYR)</p></div>
+										<div class="option" data-value="omr"><span
+												class="change-sub-text-option">OMR</span>
+											<p><span data-lang-key="common.currency.full.OMR">Оманский реал</span> (OMR)
+											</p></div>
+										<div class="option" data-value="pab"><span
+												class="change-sub-text-option">B</span>
+											<p><span data-lang-key="common.currency.full.PAB">Панамский бальбоа</span>
+												(PAB)</p></div>
+										<div class="option" data-value="pen"><span
+												class="change-sub-text-option">S/</span>
+											<p><span
+													data-lang-key="common.currency.full.PEN">Перуанский новый соль</span>
+												(PEN)</p></div>
+										<div class="option" data-value="php"><span
+												class="change-sub-text-option">PhP</span>
+											<p><span data-lang-key="common.currency.full.PHP">Филиппинское песо</span>
+												(PHP)</p></div>
+										<div class="option" data-value="pkr"><span
+												class="change-sub-text-option">Rs</span>
+											<p><span data-lang-key="common.currency.full.PKR">Пакистанская рупия</span>
+												(PKR)</p></div>
+										<div class="option" data-value="pln"><span
+												class="change-sub-text-option">Zł</span>
+											<p><span data-lang-key="common.currency.full.PLN">Польский злотый</span>
+												(PLN)</p></div>
+										<div class="option" data-value="qar"><span
+												class="change-sub-text-option">QR</span>
+											<p><span data-lang-key="common.currency.full.QAR">Катарский реал</span>
+												(QAR)</p></div>
+										<div class="option" data-value="rub"><span
+												class="change-sub-text-option">₽</span>
+											<p><span data-lang-key="common.currency.full.RUB">Российский рубль</span>
+												(RUB)</p></div>
+										<div class="option" data-value="rwf"><span
+												class="change-sub-text-option">FRw</span>
+											<p><span data-lang-key="common.currency.full.RWF">Руандийский франк</span>
+												(RWF)</p></div>
+										<div class="option" data-value="sgd"><span
+												class="change-sub-text-option">S$</span>
+											<p><span data-lang-key="common.currency.full.SGD">Сингапурский доллар</span>
+												(SGD)</p></div>
+										<div class="option" data-value="thb"><span
+												class="change-sub-text-option">฿</span>
+											<p><span data-lang-key="common.currency.full.THB">Тайский бат</span> (THB)
+											</p></div>
+										<div class="option" data-value="tjs"><span
+												class="change-sub-text-option">С</span>
+											<p><span data-lang-key="common.currency.full.TJS">Таджикский сомони</span>
+												(TJS)</p></div>
+										<div class="option" data-value="try"><span
+												class="change-sub-text-option">₺</span>
+											<p><span data-lang-key="common.currency.full.TRY">Турецкая лира</span> (TRY)
+											</p></div>
+										<div class="option" data-value="tzs"><span
+												class="change-sub-text-option">TSh</span>
+											<p><span
+													data-lang-key="common.currency.full.TZS">Танзанийский шиллинг</span>
+												(TZS)</p></div>
+										<div class="option" data-value="uah"><span
+												class="change-sub-text-option">₴</span>
+											<p><span data-lang-key="common.currency.full.UAH">Украинская гривна</span>
+												(UAH)</p></div>
+										<div class="option" data-value="ugx"><span
+												class="change-sub-text-option">Ush</span>
+											<p><span data-lang-key="common.currency.full.UGX">Угандийский шиллинг</span>
+												(UGX)</p></div>
+										<div class="option" data-value="usd"><span
+												class="change-sub-text-option">$</span>
+											<p><span data-lang-key="common.currency.full.USD">Доллар США</span> (USD)
+											</p></div>
+										<div class="option" data-value="uzs"><span
+												class="change-sub-text-option">S</span>
+											<p><span data-lang-key="common.currency.full.UZS">Узбекский сум</span> (UZS)
+											</p></div>
+										<div class="option" data-value="vnd"><span
+												class="change-sub-text-option">₫</span>
+											<p><span data-lang-key="common.currency.full.VND">Вьетнамский донг</span>
+												(VND)</p></div>
+										<div class="option" data-value="xaf"><span
+												class="change-sub-text-option">₣</span>
+											<p><span data-lang-key="common.currency.full.XAF">Франк КФА BEAC</span>
+												(XAF)</p></div>
+										<div class="option" data-value="xof"><span
+												class="change-sub-text-option">₣</span>
+											<p><span
+													data-lang-key="common.currency.full.XOF">Западноафриканский франк</span>
+												(XOF)</p></div>
+										<div class="option" data-value="zmw"><span
+												class="change-sub-text-option">ZK</span>
+											<p><span data-lang-key="common.currency.full.ZMW">Замбийская квача</span>
+												(ZMW)</p></div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="agreement"><span data-lang-key="landings.fortune-wheel.reg-agreement-text">Я подтверждаю, что я ознакомлен и полностью согласен с</span><br><a
+								class="go-to-rules-btn" href="https://1wyrc.top/rules/4" target="_blank"
+								data-lang-key="landings.fortune-wheel.reg-agreement-link">Условиями Соглашения об
+							использовании сайта 1Win</a></div>
+						<button class="reg-btn" onclick="onClickRegister('social')"
+								data-lang-key="landings.fortune-wheel.reg-btn">Зарегистрироваться
+						</button>
+					</div>
+				</div>
+				<div style="display: flex; justify-content: space-between; margin-top: auto;">
+					<div class="M__privacy-policy">© 2021 1WIN<br><span
+							data-lang-key="landings.fortune-wheel.copyright-all-rights-reserved">Все права защищены и охраняются законом</span>
+					</div>
+					<div class="lang-picker" tabindex="0" data-remove-active-on-outside-click="active">
+						<div class="lang-picker-select">
+							<div class="lang-picker-select-option" data-value="ru">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#ru"></use>
+								</svg>
+								<span><span>Русский</span> <span>(RUS)</span></span></div>
+							<div class="lang-picker-select-option" data-value="en">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#en"></use>
+								</svg>
+								<span><span>English</span> <span>(ENG)</span></span></div>
+							<div class="lang-picker-select-option" data-value="az">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#az"></use>
+								</svg>
+								<span><span>Azərbaycan dili</span> <span>(AZE)</span></span></div>
+							<div class="lang-picker-select-option" data-value="de">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#de"></use>
+								</svg>
+								<span><span>Deutsch</span> <span>(DEU)</span></span></div>
+							<div class="lang-picker-select-option" data-value="es">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#es"></use>
+								</svg>
+								<span><span>Espanol</span> <span>(ESP)</span></span></div>
+							<div class="lang-picker-select-option" data-value="fr">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#fr"></use>
+								</svg>
+								<span><span>Le français</span> <span>(FRE)</span></span></div>
+							<div class="lang-picker-select-option" data-value="id">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#id"></use>
+								</svg>
+								<span><span>Indonesian</span> <span>(IDN)</span></span></div>
+							<div class="lang-picker-select-option" data-value="in">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#in"></use>
+								</svg>
+								<span><span>हिन्दी</span> <span>(IND)</span></span></div>
+							<div class="lang-picker-select-option" data-value="it">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#it"></use>
+								</svg>
+								<span><span>Italiano</span> <span>(ITA)</span></span></div>
+							<div class="lang-picker-select-option" data-value="kg">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#kg"></use>
+								</svg>
+								<span><span>Кыргызча</span> <span>(KGZ)</span></span></div>
+							<div class="lang-picker-select-option" data-value="kk">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#kk"></use>
+								</svg>
+								<span><span>Қазақ</span> <span>(KAZ)</span></span></div>
+							<div class="lang-picker-select-option" data-value="md">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#md"></use>
+								</svg>
+								<span><span>Moldovan</span> <span>(MDA)</span></span></div>
+							<div class="lang-picker-select-option" data-value="pl">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#pl"></use>
+								</svg>
+								<span><span>Polski</span> <span>(POL)</span></span></div>
+							<div class="lang-picker-select-option" data-value="pt">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#pt"></use>
+								</svg>
+								<span><span>Português</span> <span>(PRT)</span></span></div>
+							<div class="lang-picker-select-option" data-value="tj">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#tj"></use>
+								</svg>
+								<span><span>Тоҷикӣ</span> <span>(TJK)</span></span></div>
+							<div class="lang-picker-select-option" data-value="tr">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#tr"></use>
+								</svg>
+								<span><span>Türk</span> <span>(TUR)</span></span></div>
+							<div class="lang-picker-select-option" data-value="ua">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#ua"></use>
+								</svg>
+								<span><span>Український</span> <span>(UKR)</span></span></div>
+							<div class="lang-picker-select-option" data-value="uz">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#uz"></use>
+								</svg>
+								<span><span>O'zbek</span> <span>(UZB)</span></span></div>
+							<div class="lang-picker-select-option" data-value="za">
+								<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+									<use href="/img/flags.svg#za"></use>
+								</svg>
+								<span><span>Kiswahili</span> <span>(ZAF)</span></span></div>
+						</div>
+						<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+							<use href="/img/flags.svg#ru"></use>
+						</svg>
+						<span>RUS</span>
+						<svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 285 285"
+							 width="8px" height="8px">
+							<path d="M282 77l-14-15a9 9 0 00-13 0L142 174 30 62a9 9 0 00-13 0L3 77a9 9 0 000 13l133 133a9 9 0 0013 0L282 90a9 9 0 000-13z"></path>
+						</svg>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer>
+	<div class="privacy-policy">© 2021 1WIN<br><span
+			data-lang-key="landings.fortune-wheel.copyright-all-rights-reserved">Все права защищены и охраняются законом</span>
+	</div>
+	<div class="lang-picker" tabindex="0" data-remove-active-on-outside-click="">
+		<div class="lang-picker-select">
+			<div class="lang-picker-select-option" data-value="ru">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#ru"></use>
+				</svg>
+				<span><span>Русский</span> <span>(RUS)</span></span></div>
+			<div class="lang-picker-select-option" data-value="en">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#en"></use>
+				</svg>
+				<span><span>English</span> <span>(ENG)</span></span></div>
+			<div class="lang-picker-select-option" data-value="az">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#az"></use>
+				</svg>
+				<span><span>Azərbaycan dili</span> <span>(AZE)</span></span></div>
+			<div class="lang-picker-select-option" data-value="de">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#de"></use>
+				</svg>
+				<span><span>Deutsch</span> <span>(DEU)</span></span></div>
+			<div class="lang-picker-select-option" data-value="es">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#es"></use>
+				</svg>
+				<span><span>Espanol</span> <span>(ESP)</span></span></div>
+			<div class="lang-picker-select-option" data-value="fr">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#fr"></use>
+				</svg>
+				<span><span>Le français</span> <span>(FRE)</span></span></div>
+			<div class="lang-picker-select-option" data-value="id">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#id"></use>
+				</svg>
+				<span><span>Indonesian</span> <span>(IDN)</span></span></div>
+			<div class="lang-picker-select-option" data-value="in">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#in"></use>
+				</svg>
+				<span><span>हिन्दी</span> <span>(IND)</span></span></div>
+			<div class="lang-picker-select-option" data-value="it">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#it"></use>
+				</svg>
+				<span><span>Italiano</span> <span>(ITA)</span></span></div>
+			<div class="lang-picker-select-option" data-value="kg">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#kg"></use>
+				</svg>
+				<span><span>Кыргызча</span> <span>(KGZ)</span></span></div>
+			<div class="lang-picker-select-option" data-value="kk">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#kk"></use>
+				</svg>
+				<span><span>Қазақ</span> <span>(KAZ)</span></span></div>
+			<div class="lang-picker-select-option" data-value="md">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#md"></use>
+				</svg>
+				<span><span>Moldovan</span> <span>(MDA)</span></span></div>
+			<div class="lang-picker-select-option" data-value="pl">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#pl"></use>
+				</svg>
+				<span><span>Polski</span> <span>(POL)</span></span></div>
+			<div class="lang-picker-select-option" data-value="pt">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#pt"></use>
+				</svg>
+				<span><span>Português</span> <span>(PRT)</span></span></div>
+			<div class="lang-picker-select-option" data-value="tj">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#tj"></use>
+				</svg>
+				<span><span>Тоҷикӣ</span> <span>(TJK)</span></span></div>
+			<div class="lang-picker-select-option" data-value="tr">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#tr"></use>
+				</svg>
+				<span><span>Türk</span> <span>(TUR)</span></span></div>
+			<div class="lang-picker-select-option" data-value="ua">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#ua"></use>
+				</svg>
+				<span><span>Український</span> <span>(UKR)</span></span></div>
+			<div class="lang-picker-select-option" data-value="uz">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#uz"></use>
+				</svg>
+				<span><span>O'zbek</span> <span>(UZB)</span></span></div>
+			<div class="lang-picker-select-option" data-value="za">
+				<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+					<use href="/img/flags.svg#za"></use>
+				</svg>
+				<span><span>Kiswahili</span> <span>(ZAF)</span></span></div>
+		</div>
+		<svg class="flag" xmlns="http://www.w3.org/2000/svg">
+			<use href="/img/flags.svg#ru"></use>
+		</svg>
+		<span>RUS</span>
+		<svg class="chevron" xmlns="http://www.w3.org/2000/svg" fill="#fff" viewBox="0 0 285 285" width="8px"
+			 height="8px">
+			<path d="M282 77l-14-15a9 9 0 00-13 0L142 174 30 62a9 9 0 00-13 0L3 77a9 9 0 000 13l133 133a9 9 0 0013 0L282 90a9 9 0 000-13z"></path>
+		</svg>
+	</div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="js/runtime.bungle.js"></script>
+<script src="js/main.bungle.js"></script>
+<!--<script src="js/main.js"></script>-->
+</body>
+</html>
